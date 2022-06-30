@@ -1,1 +1,0 @@
-import{_ as e,c as r,o as a,a as t}from"./app.92e0244a.js";const m=JSON.parse('{"title":"License","description":"","frontmatter":{},"headers":[],"relativePath":"guide/license.md"}'),n={name:"guide/license.md"},s=t("",3),c=[s];function o(i,_,h,l,d,p){return a(),r("div",null,c)}var u=e(n,[["render",o]]);export{m as __pageData,u as default};

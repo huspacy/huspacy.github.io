@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as e,a as n}from"./app.92e0244a.js";const d=JSON.parse('{"title":"Keyphrase Extraction","description":"","frontmatter":{},"headers":[],"relativePath":"guide/examples/keyphrase.md"}'),o={name:"guide/examples/keyphrase.md"},p=n("",7),l=[p];function t(r,c,y,F,i,D){return e(),a("div",null,l)}var h=s(o,[["render",t]]);export{d as __pageData,h as default};
