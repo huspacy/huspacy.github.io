@@ -85,4 +85,39 @@
          <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://huspacy.github.io/reference/huspacy/__init__/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://huspacy.github.io/reference/huspacy/utils/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://huspacy.github.io/reference/huspacy/components/__init__/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://huspacy.github.io/reference/huspacy/components/edit_tree_lemmatizer/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://huspacy.github.io/reference/huspacy/components/hun_sentencizer/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://huspacy.github.io/reference/huspacy/components/lemma_postprocessing/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://huspacy.github.io/reference/huspacy/components/lookup_lemmatizer/</loc>
+         <lastmod>2022-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
