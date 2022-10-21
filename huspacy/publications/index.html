@@ -12,14 +12,14 @@
         <meta name="author" content="György Orosz, SzegedAI">
       
       
-        <link rel="canonical" href="https://huspacy.github.io/huspacy/quickstart/">
+        <link rel="canonical" href="https://huspacy.github.io/huspacy/publications/">
       
       <link rel="icon" href="../../assets/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
     
     
       
-        <title>Quickstart - HuSpaCy</title>
+        <title>Publications - HuSpaCy</title>
       
     
     
@@ -87,11 +87,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#quicstart" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -121,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quickstart
+              Publications
             
           </span>
         </div>
@@ -421,21 +416,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
         Quickstart
       </a>
-      
     </li>
   
 
@@ -611,11 +596,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../publications/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Publications
       </a>
+      
     </li>
   
 
@@ -1155,8 +1148,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -1170,31 +1161,24 @@
                 
                   
 
-  <a href="https://github.com/huspacy/huspacy/edit/master/docs/huspacy/quickstart.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/huspacy/huspacy/edit/master/docs/huspacy/publications.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="quicstart"># <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.045 18.894 9.94 12 3.045 5.106a.75.75 0 0 1 1.06-1.061l7.425 7.425a.75.75 0 0 1 0 1.06l-7.424 7.425a.75.75 0 0 1-1.061-1.06zm8.205.606a.75.75 0 0 0 0 1.5h9.5a.75.75 0 0 0 0-1.5h-9.5z"/></svg></span> Quicstart<a class="headerlink" href="#quicstart" title="Permanent link">#</a></h1>
-<p>HuSpaCy is fully compatible with <a href="https://spacy.io/api/doc/">spaCy's API</a>, newcomers can easily get started with <a href="https://spacy.io/usage/spacy-101">spaCy 101</a> guide.</p>
-<p>Although HuSpacy models can be loaded with <code>spacy.load(...)</code>, the tool provides convenience methods to easily access downloaded models.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Load the model using spacy.load(...)</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">spacy</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">)</span>
+  <h1>Publications</h1>
+
+<p>If you use any of the models or HuSpaCy as library in your research, please cite this <a href="https://arxiv.org/abs/2201.01956">paper</a>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nc">@misc</span><span class="p">{</span><span class="nl">HuSpaCy:2021</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{HuSpaCy: an industrial-strength Hungarian natural language processing toolkit}}</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{XVIII. Magyar Sz{\&#39;a}m{\&#39;\i}t{\&#39;o}g{\&#39;e}pes Nyelv{\&#39;e}szeti Konferencia}}</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Orosz, Gy{\&quot;o}rgy and Sz{\&#39; a}nt{\&#39; o}, Zsolt and Berkecz, P{\&#39; e}ter and Szab{\&#39; o}, Gerg{\H o} and Farkas, Rich{\&#39; a}rd}</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="na">location</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{Szeged}}</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2022}</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Load the default large model (if downloaded)</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span> <span class="nn">huspacy</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">huspacy</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Load the model directly as a module</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span> <span class="nn">hu_core_news_lg</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">hu_core_news_lg</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
-</code></pre></div>
-<p>To process texts, you can simply call the loaded model (i.e. the <a href="https://spacy.io/api/language#call"><code>nlp</code> callable object</a>) </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;Csiribiri csiribiri zabszalma - négy csillag közt alszom ma.&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>As HuSpaCy is built on spaCy, the returned <a href="https://spacy.io/api/doc#_title"><code>doc</code> document</a> contains all the annotations given by the pipeline components.</p>
+<p>Additionally, please indicate the version of the model you used so that your research can be reproduced.</p>
 
   <hr>
 <div class="md-source-file">
@@ -1232,7 +1216,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
+        <a href="../under_the_hood/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Under the hood" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1241,20 +1225,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Installation
+              Under the hood
             </div>
           </div>
         </a>
       
       
         
-        <a href="../usage_in_r/" class="md-footer__link md-footer__link--next" aria-label="Next: Usage in R" rel="next">
+        <a href="../changelog/" class="md-footer__link md-footer__link--next" aria-label="Next: Changelog" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Usage in R
+              Changelog
             </div>
           </div>
           <div class="md-footer__button md-icon">
