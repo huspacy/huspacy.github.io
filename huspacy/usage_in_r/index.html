@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://huspacy.github.io/huspacy/usage_in_r/">
       
       <link rel="icon" href="../../assets/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
     
     
       
@@ -547,6 +547,20 @@
     <li class="md-nav__item">
       <a href="../../reference/huspacy/components/lemma_postprocessing/" class="md-nav__link">
         lemma_postprocessing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/components/sentiment/" class="md-nav__link">
+        sentiment
       </a>
     </li>
   
@@ -1121,6 +1135,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../recipes/sentiment/" class="md-nav__link">
+        Sentiment lexicons
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../recipes/sentencizer/" class="md-nav__link">
         Rule-base sentencizer
       </a>
@@ -1158,9 +1186,67 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Usage in R
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Usage in R
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-installation-method" class="md-nav__link">
+    Recommended installation method
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended installation method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-installation-method" class="md-nav__link">
+    Alternative installation method
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1244,6 +1330,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-installation-method" class="md-nav__link">
+    Recommended installation method
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended installation method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-installation-method" class="md-nav__link">
+    Alternative installation method
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1263,21 +1391,30 @@
 
 
 <h1 id="usage-in-r"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.72 21.78a.75.75 0 0 0 1.06-1.06L5.56 17.5h14.69a.75.75 0 0 0 0-1.5H5.56l3.22-3.22a.75.75 0 1 0-1.06-1.06l-4.5 4.5a.75.75 0 0 0 0 1.06l4.5 4.5zm8.56-9.5a.75.75 0 1 1-1.06-1.06L18.44 8H3.75a.75.75 0 0 1 0-1.5h14.69l-3.22-3.22a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5z"/></svg></span> Usage in R<a class="headerlink" href="#usage-in-r" title="Permanent link">#</a></h1>
-<h1 id="setup-the-environemnt">Setup the environemnt<a class="headerlink" href="#setup-the-environemnt" title="Permanent link">#</a></h1>
+<h2 id="recommended-installation-method">Recommended installation method<a class="headerlink" href="#recommended-installation-method" title="Permanent link">#</a></h2>
 <ol>
 <li>Make sure you have conda installed</li>
-<li>Create a new environment using the [<code>environemnt.yml</code>] file in the <a href="https://github.com/huspacy/huspacy-in-r">huspacy-in-r repository</a>: <code>$ conda env create -n huspacyr --file ./environment.yml</code></li>
+<li>Install <code>spacyr</code>:
+    <code>R
+    install.packages("spacyr")
+    library("spacyr")
+    spacy_install()</code></li>
+<li>Install one of the models (cf. <a href="models_gen/install_md/"><code>md</code></a>, <a href="models_gen/install_lg/"><code>lg</code></a>, <a href="models_gen/install_trf/"><code>trf</code></a>) into the <code>spacy_condaenv</code> conda environment.</li>
+</ol>
+<h3 id="alternative-installation-method">Alternative installation method<a class="headerlink" href="#alternative-installation-method" title="Permanent link">#</a></h3>
+<ol>
+<li>Create a new conda environment using the <a href="https://github.com/huspacy/huspacy-in-r/blob/master/environment.yml"><code>environment.yml</code></a> file in the <a href="https://github.com/huspacy/huspacy-in-r">huspacy-in-r repository</a>: <code>$ conda env create -n huspacyr --file ./environment.yml</code></li>
 <li>Activate the environment: <code>$ conda activate huspacyr</code></li>
 </ol>
-<p>The demo environment install the 3.4.3 version of the <code>hu_core_news_lg</code> model. If you need another model or version use <code>pip</code> (cf. <a href="models_gen/install_md/"><code>md</code></a>, <a href="models_gen/install_lg/"><code>lg</code></a>, <a href="models_gen/install_trf/"><code>trf</code></a>) to install the necessary model files to the conda environment.</p>
-<p>Having all dependencies installed, all you need to do is to load <code>spacyr</code> in the installed environment:</p>
+<p>The demo environment comes with the 3.4.3 version of the <code>hu_core_news_lg</code> model. If you need another model (or version) use <code>pip</code> (cf. <a href="models_gen/install_md/"><code>md</code></a>, <a href="models_gen/install_lg/"><code>lg</code></a>, <a href="models_gen/install_trf/"><code>trf</code></a>) to install the necessary model files to the conda environment.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
+<p>Having all dependencies installed, all you need to do is to load <code>spacyr</code> and initialize it with a HuSpaCy model:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">library</span><span class="p">(</span><span class="s">&quot;spacyr&quot;</span><span class="p">)</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Loads the model which is already installed tin the conda environment</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nf">spacy_initialize</span><span class="p">(</span><span class="n">model</span> <span class="o">=</span> <span class="s">&quot;hu_core_news_lg&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>HuSpaCy model should now parse any texts:</p>
+<p>HuSpaCy should now parse any texts:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">txt</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="n">d1</span><span class="o">=</span><span class="s">&quot;Csiribiri csiribiri zabszalma,&quot;</span><span class="p">,</span> <span class="n">d2</span><span class="o">=</span><span class="s">&quot;négy csillag közt alszom ma.&quot;</span><span class="p">)</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">parsedtxt</span> <span class="o">&lt;-</span> <span class="nf">spacy_parse</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
 </code></pre></div>
@@ -1290,11 +1427,11 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 26, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 26, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
       
     
   </small>
@@ -1374,10 +1511,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.instant", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.instant", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
     
   </body>

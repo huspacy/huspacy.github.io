@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://huspacy.github.io/reference/huspacy/components/lookup_lemmatizer/">
       
       <link rel="icon" href="../../../../assets/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
     
     
       
@@ -651,6 +651,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sentiment/" class="md-nav__link">
+        sentiment
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1215,6 +1229,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../recipes/sentiment/" class="md-nav__link">
+        Sentiment lexicons
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../recipes/sentencizer/" class="md-nav__link">
         Rule-base sentencizer
       </a>
@@ -1448,6 +1476,9 @@
       <p class="doc doc-class-bases">
         Bases: <code><span title="spacy.pipeline.Pipe">Pipe</span></code></p>
 
+  
+      <p>LookupLemmatizer learn <code>(token, pos, morph. feat) -&gt; lemma</code> mappings during training, and applies them at prediction
+time.</p>
 
 
 
@@ -1594,6 +1625,41 @@
 </code></pre></div>
 
   <div class="doc doc-contents ">
+  
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>sentences</code></td>
+          <td>
+                <code><span title="typing.Iterable">Iterable</span>[<span title="typing.Iterable">Iterable</span>[<span title="typing.Tuple">Tuple</span>[str, str, str, str]]]</code>
+          </td>
+          <td><p>Sentences to learn the mappings from</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>min_occurrences</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>mapping occurring less than this threshold are not learned</p></td>
+          <td>
+                <code>1</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 
   </div>
 
@@ -1621,11 +1687,11 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 26, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 26, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
       
     
   </small>
@@ -1705,10 +1771,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.instant", "navigation.tabs"], "search": "../../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.sections", "navigation.instant", "navigation.tabs"], "search": "../../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
     
   </body>
