@@ -519,8 +519,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/hun_sentencizer/" class="md-nav__link">
-        hun_sentencizer
+      <a href="../../reference/huspacy/components/sentencizer/" class="md-nav__link">
+        sentencizer
       </a>
     </li>
   
@@ -561,8 +561,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/sentiment/" class="md-nav__link">
+      <a href="../../reference/huspacy/components/sentiment.md" class="md-nav__link">
         sentiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/components/nerpp.md" class="md-nav__link">
+        nerpp
       </a>
     </li>
   
@@ -604,7 +618,7 @@
   
     <li class="md-nav__item">
       <a href="../publications/" class="md-nav__link">
-        Publications
+        Citing
       </a>
     </li>
   
@@ -649,6 +663,13 @@
         <li class="md-nav__item">
   <a href="#install-dependencies" class="md-nav__link">
     Install dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-structure" class="md-nav__link">
+    Repository structure
   </a>
   
 </li>
@@ -1177,6 +1198,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../recipes/nerpp/" class="md-nav__link">
+        Extended entity recognition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../recipes/sentiment/" class="md-nav__link">
         Sentiment lexicons
       </a>
@@ -1316,6 +1351,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#repository-structure" class="md-nav__link">
+    Repository structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#release-steps" class="md-nav__link">
     Release steps
   </a>
@@ -1345,10 +1387,56 @@
   <h1>Development</h1>
 
 <h2 id="install-dependencies">Install dependencies<a class="headerlink" href="#install-dependencies" title="Permanent link">#</a></h2>
-<p>Make sure you have poetry installed, then issue: <code>poetry install --with docs --with dev</code></p>
+<p>Make sure you have poetry installed, then issue: <code>poetry install --with docs --with dev --all-extras</code></p>
+<h2 id="repository-structure">Repository structure<a class="headerlink" href="#repository-structure" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>├── .github            -- Github configuration files
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── docs               -- Documentation source files
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── hu_core_news_lg    -- SpaCy 3.x project files for building the large model
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── configs        -- SpaCy pipeline configuration files
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── meta.json      -- model metadata
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   ├── poetry.lock    -- Poetry lock file
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   ├── poetry.toml    -- Poetry configs
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│   ├── project.lock   -- Auto-generated project script
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   ├── project.yml    -- SpaCy Project file describing steps needed to build the model
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   ├── pyproject.toml -- Python project definition file
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   ├── CHANGELOG.md   -- Model changelog
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   └── README.md      -- Instructions on building a model from scratch
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>├── hu_core_news_trf   -- Spacy 3.x project files for building the transformer based model
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│   ├── configs        -- SpaCy pipeline configuration files
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│   ├── meta.json      -- model metadata
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│   ├── poetry.lock    -- Poetry lock file
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│   ├── poetry.toml    -- Poetry configs
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│   ├── project.lock   -- Auto-generated project script
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>│   ├── project.yml    -- SpaCy Project file describing steps needed to build the model
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│   ├── pyproject.toml -- Python project definition file
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>│   ├── CHANGELOG.md   -- Model changelog
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>│   └── README.md      -- Instructions on building a model from scratch
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>├── hu_vectors_web_lg  -- Spacy 3.x project files for building word vectors
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>│   ├── configs        -- SpaCy pipeline configuration files
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>│   ├── poetry.lock    -- Poetry lock file
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>│   ├── poetry.toml    -- Poetry configs
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>│   ├── project.lock   -- Auto-generated project script
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>│   ├── project.yml    -- SpaCy Project file describing steps needed to build the model
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>│   ├── pyproject.toml -- Python project definition file
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>│   ├── CHANGELOG.md   -- Model changelog
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>│   └── README.md      -- Instructions on building a model from scratch
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>├── huspacy            -- subproject for the PyPI distributable package
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>│   ├── huspacy        -- huspacy python package
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>│   ├── tests          -- huspacy tests
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>│   ├── poetry.lock    -- Poetry lock file
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>│   ├── poetry.toml    -- Poetry configs
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>│   ├── pyproject.toml -- Python project definition file
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>│   ├── CHANGELOG.md   -- HuSpaCy changelog
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>│   └── README.md      -&gt; ../README.md
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>├── mkdocs.yml         -- Mkdocs config file
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>├── scripts            -- CLI scripts
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>├── LICENSE            -- License file
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>└── README.md          -- This file
+</code></pre></div>
 <h2 id="release-steps">Release steps<a class="headerlink" href="#release-steps" title="Permanent link">#</a></h2>
 <ol>
 <li>Make sure all tests pass: <code>poetry run pytest</code></li>
+<li>Update the readme, if there are changes in <code>docs</code>: <code>poetry run docs/update_readme.py</code></li>
 <li>Test README.md code snippets: <code>poetry run pytest --codeblocks --verbosity=3 ./README.md</code></li>
 <li>Bump version: <code>poetry run bumpversion --new-version NEW_VERSION --verbose major/minor/patch</code></li>
 <li>Build wheel: <code>poetry build -f wheel</code></li>
@@ -1361,11 +1449,11 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2022</span>
       
     
   </small>
@@ -1392,7 +1480,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../publications/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Publications" rel="prev">
+        <a href="../publications/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Citing" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1401,7 +1489,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Publications
+              Citing
             </div>
           </div>
         </a>

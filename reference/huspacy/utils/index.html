@@ -515,8 +515,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../components/hun_sentencizer/" class="md-nav__link">
-        hun_sentencizer
+      <a href="../components/sentencizer/" class="md-nav__link">
+        sentencizer
       </a>
     </li>
   
@@ -557,8 +557,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../components/sentiment/" class="md-nav__link">
+      <a href="../components/sentiment.md" class="md-nav__link">
         sentiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/nerpp.md" class="md-nav__link">
+        nerpp
       </a>
     </li>
   
@@ -600,7 +614,7 @@
   
     <li class="md-nav__item">
       <a href="../../../huspacy/publications/" class="md-nav__link">
-        Publications
+        Citing
       </a>
     </li>
   
@@ -1129,6 +1143,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../recipes/nerpp/" class="md-nav__link">
+        Extended entity recognition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../recipes/sentiment/" class="md-nav__link">
         Sentiment lexicons
       </a>
@@ -1327,7 +1355,7 @@ returns a non-zero exit code, a system exit is performed.</p>
 stdin (Optional[Any]): stdin to read from or None.
 capture (bool): Whether to capture the output and errors. If False,
     the stdout and stderr will not be redirected, and if there's an error,
-    sys.exit will be called with the return code. You should use capture=False
+    <code>sys.exit</code> will be called with the return code. You should use capture=False
     when you want to turn over execution to the command, and capture=True
     when you want to run the command more like a function.
 RETURNS (Optional[CompletedProcess]): The process object.</p>
@@ -1349,11 +1377,11 @@ RETURNS (Optional[CompletedProcess]): The process object.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2022</span>
       
     
   </small>

@@ -12,14 +12,14 @@
         <meta name="author" content="György Orosz, SzegedAI">
       
       
-        <link rel="canonical" href="https://huspacy.github.io/reference/huspacy/components/__init__/">
+        <link rel="canonical" href="https://huspacy.github.io/reference/huspacy/components/sentencizer/">
       
       <link rel="icon" href="../../../../assets/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
     
     
       
-        <title>init - HuSpaCy</title>
+        <title>sentencizer - HuSpaCy</title>
       
     
     
@@ -87,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#huspacy.components.sentencizer.HunSentencizer" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -116,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-                init  
+              sentencizer
             
           </span>
         </div>
@@ -231,13 +236,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../../huspacy/installation/" class="md-tabs__link">
+      <a href="../../../../huspacy/installation/" class="md-tabs__link md-tabs__link--active">
         Docs
       </a>
     </li>
@@ -372,12 +379,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -426,14 +435,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
       
       
       
@@ -468,12 +479,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_2" type="checkbox" id="__nav_2_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_2" type="checkbox" id="__nav_2_3_2" checked>
       
       
       
@@ -508,11 +521,61 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../sentencizer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          sentencizer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         sentencizer
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.components.sentencizer.HunSentencizer" class="md-nav__link">
+    HunSentencizer
+  </a>
+  
+    <nav class="md-nav" aria-label="HunSentencizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#huspacy.components.sentencizer.HunSentencizer.create_sentencizer" class="md-nav__link">
+    create_sentencizer()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1277,6 +1340,34 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.components.sentencizer.HunSentencizer" class="md-nav__link">
+    HunSentencizer
+  </a>
+  
+    <nav class="md-nav" aria-label="HunSentencizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#huspacy.components.sentencizer.HunSentencizer.create_sentencizer" class="md-nav__link">
+    create_sentencizer()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1289,13 +1380,13 @@
                 
                   
 
-  <a href="https://github.com/huspacy/huspacy/edit/master/docs/huspacy/huspacy/components/__init__.py" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/huspacy/huspacy/edit/master/docs/huspacy/huspacy/components/sentencizer.py" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>  init  </h1>
+  <h1>sentencizer</h1>
 
 <div class="doc doc-object doc-module">
 
@@ -1313,6 +1404,68 @@
 
 
 
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="huspacy.components.sentencizer.HunSentencizer" class="doc doc-heading">
+        <span class="doc doc-object-name doc-class-name">HunSentencizer</span>
+
+
+<a href="#huspacy.components.sentencizer.HunSentencizer" class="headerlink" title="Permanent link">#</a></h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><span title="spacy.pipeline.Pipe">Pipe</span></code></p>
+
+  
+      <p>Sentencizer component which uses simple rules to split the text to sentences.</p>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="huspacy.components.sentencizer.HunSentencizer.create_sentencizer" class="doc doc-heading">
+        <span class="doc doc-object-name doc-function-name">create_sentencizer</span>
+
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+<a href="#huspacy.components.sentencizer.HunSentencizer.create_sentencizer" class="headerlink" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">create_sentencizer</span><span class="p">(</span><span class="n">nlp</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+
+  <div class="doc doc-contents ">
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
 
 
 
@@ -1354,6 +1507,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../edit_tree_lemmatizer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: edit_tree_lemmatizer" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              edit_tree_lemmatizer
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lookup_lemmatizer/" class="md-footer__link md-footer__link--next" aria-label="Next: lookup_lemmatizer" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              lookup_lemmatizer
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

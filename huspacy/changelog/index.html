@@ -519,8 +519,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/hun_sentencizer/" class="md-nav__link">
-        hun_sentencizer
+      <a href="../../reference/huspacy/components/sentencizer/" class="md-nav__link">
+        sentencizer
       </a>
     </li>
   
@@ -561,8 +561,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/sentiment/" class="md-nav__link">
+      <a href="../../reference/huspacy/components/sentiment.md" class="md-nav__link">
         sentiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/components/nerpp.md" class="md-nav__link">
+        nerpp
       </a>
     </li>
   
@@ -604,7 +618,7 @@
   
     <li class="md-nav__item">
       <a href="../publications/" class="md-nav__link">
-        Publications
+        Citing
       </a>
     </li>
   
@@ -669,6 +683,26 @@
     0.6
   </a>
   
+    <nav class="md-nav" aria-label="0.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new" class="md-nav__link">
+    New
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -682,6 +716,13 @@
           <li class="md-nav__item">
   <a href="#changed" class="md-nav__link">
     Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_1" class="md-nav__link">
+    New
   </a>
   
 </li>
@@ -700,14 +741,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
+  <a href="#new_2" class="md-nav__link">
+    New
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#fixed" class="md-nav__link">
+  <a href="#fixed_1" class="md-nav__link">
     Fixed
   </a>
   
@@ -734,7 +775,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fixed_1" class="md-nav__link">
+  <a href="#fixed_2" class="md-nav__link">
     Fixed
   </a>
   
@@ -1268,6 +1309,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../recipes/nerpp/" class="md-nav__link">
+        Extended entity recognition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../recipes/sentiment/" class="md-nav__link">
         Sentiment lexicons
       </a>
@@ -1406,6 +1461,26 @@
     0.6
   </a>
   
+    <nav class="md-nav" aria-label="0.6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new" class="md-nav__link">
+    New
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    Fixed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1419,6 +1494,13 @@
           <li class="md-nav__item">
   <a href="#changed" class="md-nav__link">
     Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_1" class="md-nav__link">
+    New
   </a>
   
 </li>
@@ -1437,14 +1519,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
+  <a href="#new_2" class="md-nav__link">
+    New
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#fixed" class="md-nav__link">
+  <a href="#fixed_1" class="md-nav__link">
     Fixed
   </a>
   
@@ -1471,7 +1553,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fixed_1" class="md-nav__link">
+  <a href="#fixed_2" class="md-nav__link">
     Fixed
   </a>
   
@@ -1527,24 +1609,33 @@
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <h2 id="06">0.6<a class="headerlink" href="#06" title="Permanent link">#</a></h2>
+<h3 id="new">New<a class="headerlink" href="#new" title="Permanent link">#</a></h3>
 <ul>
-<li>Added support for sentiment lexicons</li>
+<li>Added a lookup component for sentiment lexicons</li>
+<li>Added integration for novakat's onpp NER model (<code>nerpp</code>)</li>
+</ul>
+<h3 id="fixed">Fixed<a class="headerlink" href="#fixed" title="Permanent link">#</a></h3>
+<ul>
+<li><code>packaging</code> dependency was implicit which might cause model loading failures</li>
 </ul>
 <h2 id="051">0.5.1<a class="headerlink" href="#051" title="Permanent link">#</a></h2>
 <h3 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">#</a></h3>
 <ul>
 <li>Dropped Python 3.6 support</li>
+</ul>
+<h3 id="new_1">New<a class="headerlink" href="#new_1" title="Permanent link">#</a></h3>
+<ul>
 <li>Added support for <code>hu_core_news_lg</code> <code>v3.4.3</code></li>
 </ul>
 <h2 id="05">0.5<a class="headerlink" href="#05" title="Permanent link">#</a></h2>
-<h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">#</a></h3>
+<h3 id="new_2">New<a class="headerlink" href="#new_2" title="Permanent link">#</a></h3>
 <ul>
-<li><code>trainable_lemmatizer_v2</code>: fork</li>
+<li><code>trainable_lemmatizer_v2</code>: fork and minor improvement of spaCy's trainable lemmatizer</li>
 <li><code>LemmaSmoother</code> for improving lemmatization output of the <code>trainable_lemmatizer</code></li>
 <li><code>RomanToArabic</code> for convert Roman numbers to Arabic ones</li>
 <li><code>LookupLemmatizer</code> to memoize token,pos -&gt; lemma transformations</li>
 </ul>
-<h3 id="fixed">Fixed<a class="headerlink" href="#fixed" title="Permanent link">#</a></h3>
+<h3 id="fixed_1">Fixed<a class="headerlink" href="#fixed_1" title="Permanent link">#</a></h3>
 <ul>
 <li>Fixing <a href="https://github.com/huspacy/huspacy/issues/46">#46</a>: huspacy core no longer depends on spaCy</li>
 <li>Refactored components</li>
@@ -1555,7 +1646,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li><code>download()</code> first validates the model before downloading it</li>
 </ul>
 <h2 id="043">0.4.3<a class="headerlink" href="#043" title="Permanent link">#</a></h2>
-<h3 id="fixed_1">Fixed<a class="headerlink" href="#fixed_1" title="Permanent link">#</a></h3>
+<h3 id="fixed_2">Fixed<a class="headerlink" href="#fixed_2" title="Permanent link">#</a></h3>
 <ul>
 <li>Documentation updates</li>
 <li>Fixed model loading</li>
@@ -1571,11 +1662,11 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2022</span>
       
     
   </small>

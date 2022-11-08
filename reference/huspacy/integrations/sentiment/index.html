@@ -12,14 +12,14 @@
         <meta name="author" content="György Orosz, SzegedAI">
       
       
-        <link rel="canonical" href="https://huspacy.github.io/reference/huspacy/components/__init__/">
+        <link rel="canonical" href="https://huspacy.github.io/reference/huspacy/integrations/sentiment/">
       
       <link rel="icon" href="../../../../assets/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
     
     
       
-        <title>init - HuSpaCy</title>
+        <title>Sentiment - HuSpaCy</title>
       
     
     
@@ -87,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#huspacy.integrations.sentiment.HunSentimentLexiconAnnotator" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -116,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-                init  
+              Sentiment
             
           </span>
         </div>
@@ -496,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../edit_tree_lemmatizer/" class="md-nav__link">
+      <a href="../../components/edit_tree_lemmatizer/" class="md-nav__link">
         edit_tree_lemmatizer
       </a>
     </li>
@@ -510,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sentencizer/" class="md-nav__link">
+      <a href="../../components/sentencizer/" class="md-nav__link">
         sentencizer
       </a>
     </li>
@@ -524,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lookup_lemmatizer/" class="md-nav__link">
+      <a href="../../components/lookup_lemmatizer/" class="md-nav__link">
         lookup_lemmatizer
       </a>
     </li>
@@ -538,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lemma_postprocessing/" class="md-nav__link">
+      <a href="../../components/lemma_postprocessing/" class="md-nav__link">
         lemma_postprocessing
       </a>
     </li>
@@ -552,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sentiment.md" class="md-nav__link">
+      <a href="../../components/sentiment.md" class="md-nav__link">
         sentiment
       </a>
     </li>
@@ -566,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nerpp.md" class="md-nav__link">
+      <a href="../../components/nerpp.md" class="md-nav__link">
         nerpp
       </a>
     </li>
@@ -1277,6 +1282,82 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.HunSentimentLexiconAnnotator" class="md-nav__link">
+    HunSentimentLexiconAnnotator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.PolTextLexiconLoader" class="md-nav__link">
+    PolTextLexiconLoader
+  </a>
+  
+    <nav class="md-nav" aria-label="PolTextLexiconLoader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.PolTextLexiconLoader.load" class="md-nav__link">
+    load()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.PrecoSentiLoader" class="md-nav__link">
+    PrecoSentiLoader
+  </a>
+  
+    <nav class="md-nav" aria-label="PrecoSentiLoader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.PrecoSentiLoader.load" class="md-nav__link">
+    load()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.create" class="md-nav__link">
+    create()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.create_pattern" class="md-nav__link">
+    create_pattern()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huspacy.integrations.sentiment.update_lexicons" class="md-nav__link">
+    update_lexicons()
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1289,13 +1370,13 @@
                 
                   
 
-  <a href="https://github.com/huspacy/huspacy/edit/master/docs/huspacy/huspacy/components/__init__.py" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/huspacy/huspacy/edit/master/docs/huspacy/huspacy/integrations/sentiment.py" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>  init  </h1>
+  <h1>Sentiment</h1>
 
 <div class="doc doc-object doc-module">
 
@@ -1314,6 +1395,216 @@
 
 
 
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="huspacy.integrations.sentiment.HunSentimentLexiconAnnotator" class="doc doc-heading">
+        <span class="doc doc-object-name doc-class-name">HunSentimentLexiconAnnotator</span>
+
+
+<a href="#huspacy.integrations.sentiment.HunSentimentLexiconAnnotator" class="headerlink" title="Permanent link">#</a></h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><span title="spacy.pipeline.Pipe">Pipe</span></code></p>
+
+  
+      <p>spaCy pipeline component for matching Hungarian sentiment lexicons in text.</p>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="huspacy.integrations.sentiment.PolTextLexiconLoader" class="doc doc-heading">
+        <span class="doc doc-object-name doc-class-name">PolTextLexiconLoader</span>
+
+
+<a href="#huspacy.integrations.sentiment.PolTextLexiconLoader" class="headerlink" title="Permanent link">#</a></h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Lexicon loader for the Poltext sentiment lexicon</p>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="huspacy.integrations.sentiment.PolTextLexiconLoader.load" class="doc doc-heading">
+        <span class="doc doc-object-name doc-function-name">load</span>
+
+
+<a href="#huspacy.integrations.sentiment.PolTextLexiconLoader.load" class="headerlink" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+
+  <div class="doc doc-contents ">
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="huspacy.integrations.sentiment.PrecoSentiLoader" class="doc doc-heading">
+        <span class="doc doc-object-name doc-class-name">PrecoSentiLoader</span>
+
+
+<a href="#huspacy.integrations.sentiment.PrecoSentiLoader" class="headerlink" title="Permanent link">#</a></h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Lexicon loader for the Precognox sentiment lexicon</p>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="huspacy.integrations.sentiment.PrecoSentiLoader.load" class="doc doc-heading">
+        <span class="doc doc-object-name doc-function-name">load</span>
+
+
+<a href="#huspacy.integrations.sentiment.PrecoSentiLoader.load" class="headerlink" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+
+  <div class="doc doc-contents ">
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="huspacy.integrations.sentiment.create" class="doc doc-heading">
+        <span class="doc doc-object-name doc-function-name">create</span>
+
+
+<a href="#huspacy.integrations.sentiment.create" class="headerlink" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">create</span><span class="p">(</span><span class="n">nlp</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">lexicon_id</span><span class="p">)</span>
+</code></pre></div>
+
+  <div class="doc doc-contents ">
+  
+      <p>Creates a HunSentimentLexiconAnnotator object</p>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="huspacy.integrations.sentiment.create_pattern" class="doc doc-heading">
+        <span class="doc doc-object-name doc-function-name">create_pattern</span>
+
+
+<a href="#huspacy.integrations.sentiment.create_pattern" class="headerlink" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">create_pattern</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
+</code></pre></div>
+
+  <div class="doc doc-contents ">
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="huspacy.integrations.sentiment.update_lexicons" class="doc doc-heading">
+        <span class="doc doc-object-name doc-function-name">update_lexicons</span>
+
+
+<a href="#huspacy.integrations.sentiment.update_lexicons" class="headerlink" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">update_lexicons</span><span class="p">()</span>
+</code></pre></div>
+
+  <div class="doc doc-contents ">
+  
+      <p>Update local sentiment lexicons by downloading the latest version from the Web</p>
+
+  </div>
+
+</div>
 
 
 
