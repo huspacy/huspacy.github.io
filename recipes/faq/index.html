@@ -543,20 +543,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/sentencizer/" class="md-nav__link">
-        sentencizer
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -579,12 +565,73 @@
       
       
         <label class="md-nav__link" for="__nav_2_3_3">
+          extra
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="extra" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          extra
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/sentencizer/" class="md-nav__link">
+        sentencizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/roman_num_converter/" class="md-nav__link">
+        roman_num_converter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" type="checkbox" id="__nav_2_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_4">
           integrations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="integrations" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_3">
+        <label class="md-nav__title" for="__nav_2_3_4">
           <span class="md-nav__icon md-icon"></span>
           integrations
         </label>
@@ -1474,26 +1521,32 @@
   </a>
 
 
+<!--pytest-codeblocks:skipfile-->
+
 <h1 id="frequently-asked-questions"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265zM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/></svg></span> Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">#</a></h1>
 <h2 id="huspacy-is-slow-what-can-i-do">HuSpaCy is slow, what can I do?<a class="headerlink" href="#huspacy-is-slow-what-can-i-do" title="Permanent link">#</a></h2>
-<p>Not it s not. :) You have several options to speed up your processing pipeline.</p>
+<p>Not it's not. :) You have several options to speed up your processing pipeline.</p>
 <ol>
 <li>If accuracy is not crucial use a smaller model: <code>md</code> &lt; <code>lg</code> &lt; <code>trf</code></li>
-<li>Utilize GPU: use the following directive before loading the model.
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spacy</span><span class="o">.</span><span class="n">prefer_gpu</span><span class="p">()</span>
-</code></pre></div></li>
-<li>Batch processing of multiple documents are always faster. Use the <a href="https://spacy.io/api/language#pipe"><code>Language.pipe()</code></a> method, and increase the <code>batch_size</code> if needed:
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">texts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;first doc&quot;</span><span class="p">,</span> <span class="s2">&quot;second doc&quot;</span><span class="p">]</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">docs</span> <span class="o">=</span> <span class="n">nlp</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">texts</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">)</span>
-</code></pre></div></li>
-<li>
-<p>Disable components not needed. When mining documents for named entities, the default model unnecessarily computes lemmata, PoS tags and dependency trees. You can easily disable them during model loading (c.f. <a href="https://spacy.io/api/top-level/#spacy.load"><code>spacy.load()</code></a> or <a href="/reference/huspacy/__init__/#huspacy.load"><code>huspacy.load()</code></a>) or using <a href="https://spacy.io/api/language/#disable_pipe"><code>Language.disable_pipe()</code></a> 
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">huspacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">,</span> <span class="n">disable</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;tagger&quot;</span><span class="p">])</span>
-</code></pre></div></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">nlp</span><span class="o">.</span><span class="n">disable_pipe</span><span class="p">(</span><span class="s2">&quot;tagger&quot;</span><span class="p">)</span>
-</code></pre></div>
-</li>
+<li>Utilize GPU: use the following directive before loading the model.</li>
 </ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spacy</span><span class="o">.</span><span class="n">prefer_gpu</span><span class="p">()</span>
+</code></pre></div>
+<ol>
+<li>Batch processing of multiple documents are always faster. Use the <a href="https://spacy.io/api/language#pipe"><code>Language.pipe()</code></a> method, and increase the <code>batch_size</code> if needed:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">texts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;first doc&quot;</span><span class="p">,</span> <span class="s2">&quot;second doc&quot;</span><span class="p">]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">docs</span> <span class="o">=</span> <span class="n">nlp</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">texts</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   <span class="err">```</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="mf">4.</span> <span class="n">Disable</span> <span class="n">components</span> <span class="ow">not</span> <span class="n">needed</span><span class="o">.</span> <span class="n">When</span> <span class="n">mining</span> <span class="n">documents</span> <span class="k">for</span> <span class="n">named</span> <span class="n">entities</span><span class="p">,</span> <span class="n">the</span> <span class="n">default</span> <span class="n">model</span> <span class="n">unnecessarily</span> <span class="n">computes</span> <span class="n">lemmata</span><span class="p">,</span> <span class="n">PoS</span> <span class="n">tags</span> <span class="ow">and</span> <span class="n">dependency</span> <span class="n">trees</span><span class="o">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">easily</span> <span class="n">disable</span> <span class="n">them</span> <span class="n">during</span> <span class="n">model</span> <span class="n">loading</span> <span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">f</span><span class="o">.</span> <span class="p">[</span><span class="err">`</span><span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">()</span><span class="err">`</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">spacy</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">top</span><span class="o">-</span><span class="n">level</span><span class="o">/</span><span class="c1">#spacy.load) or [`huspacy.load()`](/reference/huspacy/__init__/#huspacy.load)) or using [`Language.disable_pipe()`](https://spacy.io/api/language/#disable_pipe)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="err">```</span><span class="n">python</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">huspacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">,</span> <span class="n">disable</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;tagger&quot;</span><span class="p">])</span>
+</code></pre></div>
+<p>or</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">nlp</span><span class="o">.</span><span class="n">disable_pipe</span><span class="p">(</span><span class="s2">&quot;tagger&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="the-ner-model-usually-confuses-org-and-loc-entites-why-is-that">The NER model usually confuses ORG and LOC entites, why is that?<a class="headerlink" href="#the-ner-model-usually-confuses-org-and-loc-entites-why-is-that" title="Permanent link">#</a></h2>
 <p>The underlying model has been trained on corpora following the "tag-for-meaning" guideline which yields context dependent labels. For example referring to "Budapest" in the context of the Hungarian government should yield the <code>ORG</code> label while in other contexts it should be tagged as a <code>LOC</code>.</p>
 <h2 id="can-i-use-huspacy-for-my-commercial-software">Can I use HuSpaCy for my commercial software?<a class="headerlink" href="#can-i-use-huspacy-for-my-commercial-software" title="Permanent link">#</a></h2>
@@ -1504,7 +1557,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2022</span>
       
     
   </small>

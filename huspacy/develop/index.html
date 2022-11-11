@@ -545,20 +545,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/sentencizer/" class="md-nav__link">
-        sentencizer
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -581,12 +567,73 @@
       
       
         <label class="md-nav__link" for="__nav_2_3_3">
+          extra
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="extra" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          extra
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/sentencizer/" class="md-nav__link">
+        sentencizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/roman_num_converter/" class="md-nav__link">
+        roman_num_converter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" type="checkbox" id="__nav_2_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_4">
           integrations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="integrations" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_3">
+        <label class="md-nav__title" for="__nav_2_3_4">
           <span class="md-nav__icon md-icon"></span>
           integrations
         </label>
@@ -1505,8 +1552,8 @@
 <p>First of all, we need all the dependecies installed: <code>poetry install --with docs --with dev --all-extras</code></p>
 <ol>
 <li>Make sure all tests pass: <code>poetry run pytest</code></li>
-<li>Update the readme, if there are changes in <code>docs</code>: <code>poetry run docs/update_readme.py</code></li>
-<li>Test README.md code snippets: <code>poetry run pytest --codeblocks --verbosity=3 ./README.md</code></li>
+<li>Update the readme, if there are changes in <code>docs</code>: <code>poetry run python ../docs/update_readme.py</code></li>
+<li>Test README.md code snippets: <code>poetry run pytest --codeblocks --verbosity=3 ./README.md  ../docs/huspacy/*.md ../docs/recipes/*.md</code></li>
 <li>Bump version: <code>poetry run bumpversion --new-version NEW_VERSION --verbose major/minor/patch</code></li>
 <li>Build wheel: <code>poetry build -f wheel</code></li>
 <li>Publish on PyPI: <code>poetry publish</code></li>
@@ -1518,7 +1565,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2022</span>
       
     
   </small>

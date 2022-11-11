@@ -543,20 +543,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/sentencizer/" class="md-nav__link">
-        sentencizer
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -579,12 +565,73 @@
       
       
         <label class="md-nav__link" for="__nav_2_3_3">
+          extra
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="extra" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          extra
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/sentencizer/" class="md-nav__link">
+        sentencizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/roman_num_converter/" class="md-nav__link">
+        roman_num_converter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" type="checkbox" id="__nav_2_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_4">
           integrations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="integrations" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_3">
+        <label class="md-nav__title" for="__nav_2_3_4">
           <span class="md-nav__icon md-icon"></span>
           integrations
         </label>
@@ -1226,13 +1273,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#extract-sentiment-values" class="md-nav__link">
-    Extract sentiment values
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1435,13 +1475,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#extract-sentiment-values" class="md-nav__link">
-    Extract sentiment values
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1468,24 +1501,28 @@ The component loads up a lexicon and match words with it.
 The module can use two sentiment lexicons, the default one is the <a href="https://github.com/poltextlab/sentiment_hun">PolText Lab's resource</a> 
 while one can also load the <a href="https://opendata.hu/dataset/hungarian-sentiment-lexicon">PrecoSenti</a> lexicon.</p>
 <h2 id="load-the-component">Load the component<a class="headerlink" href="#load-the-component" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">huspacy</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">huspacy.integrations</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Load the default lexicon</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">huspacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">nlp</span><span class="o">.</span><span class="n">add_pipe</span><span class="p">(</span><span class="s2">&quot;sentiment_lexicon&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># Load a specific lexicon</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">huspacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">nlp</span><span class="o">.</span><span class="n">add_pipe</span><span class="p">(</span><span class="s2">&quot;sentiment_lexicon&quot;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;lexicon_id&quot;</span><span class="p">:</span> <span class="s2">&quot;precognox&quot;</span><span class="p">})</span>
+<!--
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">spacy.lang.hu</span> <span class="kn">import</span> <span class="n">Hungarian</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">Hungarian</span><span class="p">()</span>
 </code></pre></div>
-<h2 id="extract-sentiment-values">Extract sentiment values<a class="headerlink" href="#extract-sentiment-values" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;Ez szuper jó&quot;</span><span class="p">)</span>
+-->
+
+<p>Load the default sentiment lexicon (<code>poltext</code>)</p>
+<!--pytest-codeblocks:cont-->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">huspacy.integrations</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">spans</span><span class="p">[</span><span class="s2">&quot;sentiment&quot;</span><span class="p">])</span>  <span class="c1"># [&quot;szuper&quot;, &quot;jó&quot;]</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">sentiment</span><span class="p">)</span>  <span class="c1"># &#39;POS&#39;</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">sentiment</span><span class="p">)</span>  <span class="c1"># &#39;POS&#39;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">nlp</span><span class="o">.</span><span class="n">add_pipe</span><span class="p">(</span><span class="s2">&quot;sentiment_lexicon&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Or you can specify the lexicon to be used by passing addition configuration during initialization <code>nlp.add_pipe("sentiment_lexicon", config={"lexicon_id": "precognox"})</code>.</p>
+<p>Then you can start discovering sentiment values of spans and tokens:</p>
+<!--pytest-codeblocks:cont-->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;Ez szuper jó&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">spans</span><span class="p">[</span><span class="s2">&quot;sentiment&quot;</span><span class="p">])</span>  <span class="c1"># [&quot;szuper&quot;, &quot;jó&quot;]</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">sentiment</span><span class="p">)</span>  <span class="c1"># &#39;POS&#39;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">sentiment</span><span class="p">)</span>  <span class="c1"># &#39;POS&#39;</span>
 </code></pre></div>
 
   <hr>
@@ -1493,7 +1530,7 @@ while one can also load the <a href="https://opendata.hu/dataset/hungarian-senti
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2022</span>
       
     
   </small>

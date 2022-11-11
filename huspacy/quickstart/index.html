@@ -555,20 +555,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/sentencizer/" class="md-nav__link">
-        sentencizer
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -591,12 +577,73 @@
       
       
         <label class="md-nav__link" for="__nav_2_3_3">
+          extra
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="extra" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          extra
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/sentencizer/" class="md-nav__link">
+        sentencizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/roman_num_converter/" class="md-nav__link">
+        roman_num_converter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" type="checkbox" id="__nav_2_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_4">
           integrations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="integrations" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_3">
+        <label class="md-nav__title" for="__nav_2_3_4">
           <span class="md-nav__icon md-icon"></span>
           integrations
         </label>
@@ -1416,6 +1463,8 @@
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">hu_core_news_lg</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 </code></pre></div>
 <p>To process texts, you can simply call the loaded model (i.e. the <a href="https://spacy.io/api/language#call"><code>nlp</code> callable object</a>) </p>
+<!--pytest-codeblocks:cont-->
+
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;Csiribiri csiribiri zabszalma - négy csillag közt alszom ma.&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>As HuSpaCy is built on spaCy, the returned <a href="https://spacy.io/api/doc#_title"><code>doc</code> document</a> contains all the annotations given by the pipeline components.</p>
@@ -1425,7 +1474,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2022</span>
       
     
   </small>

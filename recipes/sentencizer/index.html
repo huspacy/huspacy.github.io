@@ -543,20 +543,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../reference/huspacy/components/sentencizer/" class="md-nav__link">
-        sentencizer
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -579,12 +565,73 @@
       
       
         <label class="md-nav__link" for="__nav_2_3_3">
+          extra
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="extra" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          extra
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/sentencizer/" class="md-nav__link">
+        sentencizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/huspacy/extra/roman_num_converter/" class="md-nav__link">
+        roman_num_converter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" type="checkbox" id="__nav_2_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_4">
           integrations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="integrations" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_3">
+        <label class="md-nav__title" for="__nav_2_3_4">
           <span class="md-nav__icon md-icon"></span>
           integrations
         </label>
@@ -1402,12 +1449,14 @@
   </a>
 
 
+<!--pytest-codeblocks:skipfile-->
+
 <h1 id="rule-based-sentencizer"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 6v2H3V6h18M3 18h9v-2H3v2m0-5h18v-2H3v2Z"/></svg></span> Rule-based sentencizer<a class="headerlink" href="#rule-based-sentencizer" title="Permanent link">#</a></h1>
 <p>All models come with a machine learning based sentencizer. If by any reason, you want to rely on a rule-base one,
 HuSpacy got your back as it contains a classic sentence boundary detector component.</p>
 <p>In order to use it, you should replace the <code>senter</code> pipeline step:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">huspacy</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">huspacy.components</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">huspacy.extra</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">huspacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">)</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">nlp</span><span class="o">.</span><span class="n">replace_pipe</span><span class="p">(</span><span class="s2">&quot;senter&quot;</span><span class="p">,</span> <span class="s2">&quot;hun_sentencizer&quot;</span><span class="p">)</span>
@@ -1418,7 +1467,7 @@ HuSpacy got your back as it contains a classic sentence boundary detector compon
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2022</span>
       
     
   </small>
