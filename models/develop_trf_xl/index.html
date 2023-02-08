@@ -12,14 +12,14 @@
         <meta name="author" content="György Orosz, SzegedAI">
       
       
-        <link rel="canonical" href="https://huspacy.github.io/examples/dbpedia/">
+        <link rel="canonical" href="https://huspacy.github.io/models/develop_trf_xl/">
       
       <link rel="icon" href="../../assets/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
     
     
       
-        <title>Entity linking - HuSpaCy</title>
+        <title>Development - HuSpaCy</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entity-linking" class="md-skip">
+        <a href="#model-development" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Entity linking
+              Development
             
           </span>
         </div>
@@ -252,13 +252,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../models_gen/" class="md-tabs__link">
+      <a href="../../models_gen/" class="md-tabs__link md-tabs__link--active">
         Models
       </a>
     </li>
@@ -268,8 +270,6 @@
         
   
   
-    
-  
 
 
   
@@ -281,7 +281,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../anonymizer/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../examples/anonymizer/" class="md-tabs__link">
         Recipes
       </a>
     </li>
@@ -733,12 +733,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -831,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/develop_md/" class="md-nav__link">
+      <a href="../develop_md/" class="md-nav__link">
         Development
       </a>
     </li>
@@ -845,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/changelog_md/" class="md-nav__link">
+      <a href="../changelog_md/" class="md-nav__link">
         Changelog
       </a>
     </li>
@@ -922,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/develop_lg/" class="md-nav__link">
+      <a href="../develop_lg/" class="md-nav__link">
         Development
       </a>
     </li>
@@ -936,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/changelog_lg/" class="md-nav__link">
+      <a href="../changelog_lg/" class="md-nav__link">
         Changelog
       </a>
     </li>
@@ -1013,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/develop_trf/" class="md-nav__link">
+      <a href="../develop_trf/" class="md-nav__link">
         Development
       </a>
     </li>
@@ -1027,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/changelog_trf/" class="md-nav__link">
+      <a href="../changelog_trf/" class="md-nav__link">
         Changelog
       </a>
     </li>
@@ -1046,14 +1048,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
       
       
       
@@ -1102,11 +1106,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../models/develop_trf_xl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Development
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#train-the-pipeline-components" class="md-nav__link">
+    Train the pipeline components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fine-tune-the-models" class="md-nav__link">
+    Fine-tune the models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publish-models" class="md-nav__link">
+    Publish models
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1118,7 +1177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/changelog_trf_xl/" class="md-nav__link">
+      <a href="../changelog_trf_xl/" class="md-nav__link">
         Changelog
       </a>
     </li>
@@ -1145,14 +1204,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -1173,16 +1230,14 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
       
       
       
@@ -1205,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../anonymizer/" class="md-nav__link">
+      <a href="../../examples/anonymizer/" class="md-nav__link">
         Anonymizer
       </a>
     </li>
@@ -1217,59 +1272,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Entity linking
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../examples/dbpedia/" class="md-nav__link">
         Entity linking
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#initializing-dbpedia-spotlight" class="md-nav__link">
-    Initializing DBpedia Spotlight
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#presenting-the-entities" class="md-nav__link">
-    Presenting the entities
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1281,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../keyphrase/" class="md-nav__link">
+      <a href="../../examples/keyphrase/" class="md-nav__link">
         Keyphrase extraction
       </a>
     </li>
@@ -1295,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../relation/" class="md-nav__link">
+      <a href="../../examples/relation/" class="md-nav__link">
         Relation extraction
       </a>
     </li>
@@ -1567,15 +1574,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#initializing-dbpedia-spotlight" class="md-nav__link">
-    Initializing DBpedia Spotlight
+  <a href="#train-the-pipeline-components" class="md-nav__link">
+    Train the pipeline components
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#presenting-the-entities" class="md-nav__link">
-    Presenting the entities
+  <a href="#fine-tune-the-models" class="md-nav__link">
+    Fine-tune the models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publish-models" class="md-nav__link">
+    Publish models
   </a>
   
 </li>
@@ -1594,27 +1608,33 @@
                 
                   
 
-  <a href="https://github.com/huspacy/huspacy/edit/master/docs/examples/dbpedia.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/huspacy/huspacy/edit/master/docs/models/develop_trf_xl.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="entity-linking"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7h4v2H7a3 3 0 0 0-3 3 3 3 0 0 0 3 3h4v2H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5m10 0a5 5 0 0 1 5 5h-2a3 3 0 0 0-3-3h-4V7h4m-9 4h8v2H8v-2m9 1h2v3h3v2h-3v3h-2v-3h-3v-2h3v-3Z"/></svg></span> Entity Linking<a class="headerlink" href="#entity-linking" title="Permanent link">#</a></h1>
-<p>Using the DBpedia Spotlight integration for SpaCy<a href="https://github.com/MartinoMensio/spacy-dbpedia-spotlig[](anonymizer.md)ht">¹</a>, we can easily extract and link DBpedia entities from any text.</p>
-<h2 id="initializing-dbpedia-spotlight">Initializing DBpedia Spotlight<a class="headerlink" href="#initializing-dbpedia-spotlight" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_trf&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">nlp</span><span class="o">.</span><span class="n">add_pipe</span><span class="p">(</span><span class="s2">&quot;dbpedia_spotlight&quot;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;dbpedia_rest_endpoint&#39;</span><span class="p">:</span> <span class="s1">&#39;https://dbpedia-spotlight.dsd.sztaki.hu/hu&#39;</span><span class="p">,</span> <span class="s1">&#39;overwrite_ents&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">})</span>
-</code></pre></div>
-<h2 id="presenting-the-entities">Presenting the entities<a class="headerlink" href="#presenting-the-entities" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;A Mátrix című sci-fi film Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Joe Pantoliano és Hugo Weaving főszereplésével.&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="p">{</span><span class="s2">&quot;Text&quot;</span><span class="p">:</span> <span class="n">ent</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> 
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="s2">&quot;Resource&quot;</span><span class="p">:</span> <span class="n">ent</span><span class="o">.</span><span class="n">kb_id_</span><span class="p">,</span> 
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="s2">&quot;Similarity Score&quot;</span><span class="p">:</span> <span class="n">ent</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">dbpedia_raw_result</span><span class="p">[</span><span class="s1">&#39;@similarityScore&#39;</span><span class="p">]}</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>     <span class="k">for</span> <span class="n">ent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">spans</span><span class="p">[</span><span class="s2">&quot;dbpedia_spotlight&quot;</span><span class="p">]])</span>
-</code></pre></div>
-<p>This example is available on <a href="https://huggingface.co/spaces/huspacy/example-applications">Hugging Face Spaces</a>, while the full source code is on <a href="https://github.com/huspacy/example-applications/blob/main/examples/dbpedia.py">GitHub</a>.</p>
+<h1 id="model-development">Model development<a class="headerlink" href="#model-development" title="Permanent link">#</a></h1>
+<h2 id="train-the-pipeline-components">Train the pipeline components<a class="headerlink" href="#train-the-pipeline-components" title="Permanent link">#</a></h2>
+<ol>
+<li>Install dependencies: <code>poetry install</code> (CUDA 11.1 is supported out-of-the-box)<ul>
+<li>To enable full GPU usage install PyTorch: <code>poetry run python -m pip install torch==1.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html</code></li>
+<li>Run <code>poetry run pip install -U pip setuptools wheel</code> if these packages are missing or not uptodate</li>
+</ul>
+</li>
+<li>Activate the virtual environment <code>poetry shell</code></li>
+<li>Fetch datafiles: <code>spacy project assets</code> </li>
+<li>Build all the models: <code>spacy project run all</code></li>
+</ol>
+<h2 id="fine-tune-the-models">Fine-tune the models<a class="headerlink" href="#fine-tune-the-models" title="Permanent link">#</a></h2>
+<p>Hyperparameters of the underlying models can be fine-tuned using Weights&amp;Biases: <code>wandb sweep</code> with one of the <code>sweep_*.yml</code> config file.</p>
+<h2 id="publish-models">Publish models<a class="headerlink" href="#publish-models" title="Permanent link">#</a></h2>
+<ol>
+<li>Make sure dependencies are up-to-date: <code>poetry update</code></li>
+<li>Bump version: <code>bumpversion --new-version x.x.x major/micro/patch --verbose</code></li>
+<li>Build the model as described in the previous section</li>
+<li>Publish the new model to Hugging Face Hub: <code>poetry run spacy project run publish</code> (must be executed in the model's directory)</li>
+</ol>
 
   <hr>
 <div class="md-source-file">
@@ -1648,7 +1668,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../anonymizer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Anonymizer" rel="prev">
+        <a href="../../models_gen/install_trf_xl/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1657,20 +1677,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Anonymizer
+              Installation
             </div>
           </div>
         </a>
       
       
         
-        <a href="../keyphrase/" class="md-footer__link md-footer__link--next" aria-label="Next: Keyphrase extraction" rel="next">
+        <a href="../changelog_trf_xl/" class="md-footer__link md-footer__link--next" aria-label="Next: Changelog" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Keyphrase extraction
+              Changelog
             </div>
           </div>
           <div class="md-footer__button md-icon">

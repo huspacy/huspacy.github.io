@@ -1042,6 +1042,97 @@
 
             
           
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          hu_core_news_trf_xl
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="hu_core_news_trf_xl" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          hu_core_news_trf_xl
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models_gen/index_trf_xl/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models_gen/install_trf_xl/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/develop_trf_xl/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/changelog_trf_xl/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1335,8 +1426,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-ner-model-usually-confuses-org-and-loc-entites-why-is-that" class="md-nav__link">
-    The NER model usually confuses ORG and LOC entites, why is that?
+  <a href="#models-require-too-much-ram-how-can-i-reduce-their-memory-footprint" class="md-nav__link">
+    Models require too much RAM, how can I reduce their memory footprint?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ner-model-usually-confuses-org-and-loc-entities-why-is-that" class="md-nav__link">
+    The NER model usually confuses ORG and LOC entities, why is that?
   </a>
   
 </li>
@@ -1488,8 +1586,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-ner-model-usually-confuses-org-and-loc-entites-why-is-that" class="md-nav__link">
-    The NER model usually confuses ORG and LOC entites, why is that?
+  <a href="#models-require-too-much-ram-how-can-i-reduce-their-memory-footprint" class="md-nav__link">
+    Models require too much RAM, how can I reduce their memory footprint?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ner-model-usually-confuses-org-and-loc-entities-why-is-that" class="md-nav__link">
+    The NER model usually confuses ORG and LOC entities, why is that?
   </a>
   
 </li>
@@ -1547,7 +1652,9 @@
 <p>or</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">nlp</span><span class="o">.</span><span class="n">disable_pipe</span><span class="p">(</span><span class="s2">&quot;tagger&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="the-ner-model-usually-confuses-org-and-loc-entites-why-is-that">The NER model usually confuses ORG and LOC entites, why is that?<a class="headerlink" href="#the-ner-model-usually-confuses-org-and-loc-entites-why-is-that" title="Permanent link">#</a></h2>
+<h2 id="models-require-too-much-ram-how-can-i-reduce-their-memory-footprint">Models require too much RAM, how can I reduce their memory footprint?<a class="headerlink" href="#models-require-too-much-ram-how-can-i-reduce-their-memory-footprint" title="Permanent link">#</a></h2>
+<p>HuSpaCy models use distinct language models for almost each of their components. This architecture decision enables the model achieving higher precision compromising on increased memory usage. However, if you only need certain components, others can be disabled as shown above.</p>
+<h2 id="the-ner-model-usually-confuses-org-and-loc-entities-why-is-that">The NER model usually confuses ORG and LOC entities, why is that?<a class="headerlink" href="#the-ner-model-usually-confuses-org-and-loc-entities-why-is-that" title="Permanent link">#</a></h2>
 <p>The underlying model has been trained on corpora following the "tag-for-meaning" guideline which yields context dependent labels. For example referring to "Budapest" in the context of the Hungarian government should yield the <code>ORG</code> label while in other contexts it should be tagged as a <code>LOC</code>.</p>
 <h2 id="can-i-use-huspacy-for-my-commercial-software">Can I use HuSpaCy for my commercial software?<a class="headerlink" href="#can-i-use-huspacy-for-my-commercial-software" title="Permanent link">#</a></h2>
 <p>Yes, the tool is licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> license, while all the models are <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
@@ -1557,7 +1664,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2023</span>
       
     
   </small>
