@@ -1636,10 +1636,10 @@
 <li>Utilize GPU: use the following directive <strong>before</strong> loading the model (and <a href="https://spacy.io/usage#gpu">make sure</a> all GPU related dependencies are installer). <a href="https://colab.research.google.com/drive/1gD4OzCddbFM76yS1kWVDDbZd9rrCiho7#scrollTo=bPnMq5tGAiM7">This simple notebook</a> might help you get started.
    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spacy</span><span class="o">.</span><span class="n">prefer_gpu</span><span class="p">()</span>
 </code></pre></div></li>
-<li>Batch processing of multiple documents are always faster. Use the <a href="https://spacy.io/api/language#pipe"><code>Language.pipe()</code></a> method, and increase the <code>batch_size</code> if needed:
+<li>Batch processing of multiple documents are always faster. Use the <a href="https://spacy.io/api/language#pipe"><code>Language.pipe()</code></a> method, and increase the <code>batch_size</code> if needed. Additionally, the <code>n_process</code> parameter can be used to orchestrate multiprocessing when running models on CPU.
    <code>python
    texts = ["first doc", "second doc"]
-   docs = nlp.pipe(texts, batch_size=1024)</code></li>
+   docs = nlp.pipe(texts, batch_size=1024, n_jobs=2)</code></li>
 <li>Disable components not needed. When mining documents for named entities, the default model unnecessarily computes lemmata, PoS tags and dependency trees. You can easily disable them during model loading (c.f. <a href="https://spacy.io/api/top-level/#spacy.load"><code>spacy.load()</code></a> or <a href="/reference/huspacy/__init__/#huspacy.load"><code>huspacy.load()</code></a>) or using <a href="https://spacy.io/api/language/#disable_pipe"><code>Language.disable_pipe()</code></a>
    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">huspacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">,</span> <span class="n">disable</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;tagger&quot;</span><span class="p">])</span>
 </code></pre></div>
@@ -1659,7 +1659,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2023</span>
       
     
   </small>
