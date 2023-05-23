@@ -12,14 +12,14 @@
         <meta name="author" content="György Orosz, SzegedAI">
       
       
-        <link rel="canonical" href="https://huspacy.github.io/huspacy/license/">
+        <link rel="canonical" href="https://huspacy.github.io/recipes/nounphrases/">
       
       <link rel="icon" href="../../assets/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-8.5.10">
     
     
       
-        <title>License - HuSpaCy</title>
+        <title>Noun-phrase chunking - HuSpaCy</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#license" class="md-skip">
+        <a href="#extracting-noun-phrases" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              License
+              Noun-phrase chunking
             
           </span>
         </div>
@@ -245,7 +245,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../installation/" class="md-tabs__link">
+      <a href="../../huspacy/installation/" class="md-tabs__link">
         Docs
       </a>
     </li>
@@ -271,6 +271,8 @@
         
   
   
+    
+  
 
 
   
@@ -282,7 +284,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../examples/anonymizer/" class="md-tabs__link">
+      <a href="../../examples/anonymizer/" class="md-tabs__link md-tabs__link--active">
         Recipes
       </a>
     </li>
@@ -306,15 +308,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../contact/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../contact/" class="md-tabs__link">
         About
       </a>
     </li>
@@ -414,7 +414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../huspacy/installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -428,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+      <a href="../../huspacy/quickstart/" class="md-nav__link">
         Quickstart
       </a>
     </li>
@@ -688,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../under_the_hood/" class="md-nav__link">
+      <a href="../../huspacy/under_the_hood/" class="md-nav__link">
         Under the hood
       </a>
     </li>
@@ -702,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../develop/" class="md-nav__link">
+      <a href="../../huspacy/develop/" class="md-nav__link">
         Development
       </a>
     </li>
@@ -716,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/" class="md-nav__link">
+      <a href="../../huspacy/changelog/" class="md-nav__link">
         Changelog
       </a>
     </li>
@@ -1148,12 +1148,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -1279,14 +1281,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
       
       
       
@@ -1309,7 +1313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recipes/nerpp/" class="md-nav__link">
+      <a href="../nerpp/" class="md-nav__link">
         Extended entity recognition
       </a>
     </li>
@@ -1323,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recipes/sentiment/" class="md-nav__link">
+      <a href="../sentiment/" class="md-nav__link">
         Sentiment lexicons
       </a>
     </li>
@@ -1335,11 +1339,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../recipes/nounphrases/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Noun-phrase chunking
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Noun-phrase chunking
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-dependencies" class="md-nav__link">
+    Install dependencies
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1351,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recipes/sentencizer/" class="md-nav__link">
+      <a href="../sentencizer/" class="md-nav__link">
         Rule-base sentencizer
       </a>
     </li>
@@ -1365,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recipes/roman_nums/" class="md-nav__link">
+      <a href="../roman_nums/" class="md-nav__link">
         Roman numbers
       </a>
     </li>
@@ -1379,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usage_in_r/" class="md-nav__link">
+      <a href="../../huspacy/usage_in_r/" class="md-nav__link">
         Usage in R
       </a>
     </li>
@@ -1400,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recipes/faq/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -1435,14 +1480,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       
       
@@ -1479,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../publications/" class="md-nav__link">
+      <a href="../../huspacy/publications/" class="md-nav__link">
         Citing
       </a>
     </li>
@@ -1491,21 +1534,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../huspacy/license/" class="md-nav__link">
         License
       </a>
-      
     </li>
   
 
@@ -1537,6 +1570,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-dependencies" class="md-nav__link">
+    Install dependencies
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1549,15 +1597,66 @@
                 
                   
 
-  <a href="https://github.com/huspacy/huspacy/edit/master/docs/huspacy/license.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/huspacy/huspacy/edit/master/docs/recipes/nounphrases.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="license"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12.212 3.02a1.75 1.75 0 0 0-2.478.003l-5.83 5.83a3.007 3.007 0 0 0-.88 2.127c0 .795.315 1.551.88 2.116.567.567 1.333.89 2.126.89.79 0 1.548-.321 2.116-.89l5.48-5.48a.75.75 0 0 1 1.061 1.06l-5.48 5.48a4.494 4.494 0 0 1-3.177 1.33c-1.2 0-2.345-.487-3.187-1.33a4.485 4.485 0 0 1-1.32-3.177c0-1.195.475-2.341 1.32-3.186l5.83-5.83a3.25 3.25 0 0 1 5.553 2.297c0 .863-.343 1.691-.953 2.301L7.439 12.39a2.01 2.01 0 0 1-1.416.593 2 2 0 0 1-1.412-.593 1.991 1.991 0 0 1 0-2.828l5.48-5.48a.75.75 0 0 1 1.06 1.06l-5.48 5.48a.491.491 0 0 0 0 .707.5.5 0 0 0 .352.154.509.509 0 0 0 .356-.154l5.833-5.827a1.755 1.755 0 0 0 0-2.481z"/></svg></span> License<a class="headerlink" href="#license" title="Permanent link">#</a></h1>
-<p>This library is released under the <a href="https://github.com/huspacy/huspacy/blob/master/LICENSE">Apache 2.0 License</a></p>
-<p>Trained models have their own license (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>) as described on the <a href="https://huggingface.co/huspacy/">models page</a>.</p>
+<h1 id="extracting-noun-phrases">Extracting noun phrases<a class="headerlink" href="#extracting-noun-phrases" title="Permanent link">#</a></h1>
+<p>Even though, spaCy's rule-based noun chunking facilities are not yet supported, you can still extract noun phrases using the Berkeley Neural Parser (<code>benepar</code>). </p>
+<h2 id="install-dependencies">Install dependencies<a class="headerlink" href="#install-dependencies" title="Permanent link">#</a></h2>
+<p>First you'll need to install the tool by issuing <code>pip install benepar</code> or <code>pip install huspacy[np]</code></p>
+<!--
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="kn">import</span> <span class="nn">hu_core_news_lg</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="kn">import</span> <span class="nn">huspacy</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">huspacy</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s2">&quot;hu_core_news_lg&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="kn">import</span> <span class="nn">hu_core_news_lg</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">nlp</span> <span class="o">=</span> <span class="n">hu_core_news_lg</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</code></pre></div>
+-->
+
+<p>Then, <code>benepar</code> models should be downloaded and added to a HuSpaCy pipeline:</p>
+<!--pytest-codeblocks:cont-->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">benepar</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Workaround for incompatible protobuf versions</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION&quot;</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;python&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">benepar</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;benepar_hu2&#39;</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">nlp</span><span class="o">.</span><span class="n">add_pipe</span><span class="p">(</span><span class="s2">&quot;benepar&quot;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;benepar_hu2&quot;</span><span class="p">})</span>
+</code></pre></div>
+<p>One can use this simple method to extract maximal noun phrase:</p>
+<!--pytest-codeblocks:cont-->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">spacy.tokens</span> <span class="kn">import</span> <span class="n">Span</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">def</span> <span class="nf">extract_max_np</span><span class="p">(</span><span class="n">span</span><span class="p">:</span> <span class="n">Span</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Span</span><span class="p">]:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  <span class="k">if</span> <span class="s2">&quot;NP&quot;</span> <span class="ow">in</span> <span class="n">span</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">labels</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">yield</span> <span class="n">span</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">span</span><span class="o">.</span><span class="n">_</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>      <span class="k">yield from</span> <span class="n">extract_max_np</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+</code></pre></div>
+<p>Then</p>
+<!--pytest-codeblocks:cont-->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;Ők korábban népszavazási kérdéseket jelentettek be, és azt ígérik, folytatják.&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  <span class="k">for</span> <span class="n">np</span> <span class="ow">in</span> <span class="n">extract_max_np</span><span class="p">(</span><span class="n">sent</span><span class="p">):</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="p">)</span>
+</code></pre></div>
+<p>prints:</p>
+<!--pytest-codeblocks:expected-output-->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Ők
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>népszavazási kérdéseket
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>azt
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">
@@ -1591,7 +1690,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../publications/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Citing" rel="prev">
+        <a href="../sentiment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sentiment lexicons" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1600,11 +1699,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Citing
+              Sentiment lexicons
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../sentencizer/" class="md-footer__link md-footer__link--next" aria-label="Next: Rule-base sentencizer" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Rule-base sentencizer
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
