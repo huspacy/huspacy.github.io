@@ -1634,9 +1634,11 @@
 <h1 id="emmorph-integration"><code>emMorph</code> integration<a class="headerlink" href="#emmorph-integration" title="Permanent link">#</a></h1>
 <p>HuSpaCy does nt employ an integrated morphological analyzer, however it might be useful to include one in the pipeline in some cases. <code>emMorph</code> is one of the most popular morph. analyzers available having a Python interface. </p>
 <h2 id="install-dependencies">Install dependencies<a class="headerlink" href="#install-dependencies" title="Permanent link">#</a></h2>
-<p><code>emMorph</code> depends on <code>hfst</code>, which must be installed by the package manager of your OS. In Debian/Ubuntu: <code>apt install hfst</code>. Further on, one must also install the tool's python wrapper and the UD converter:
-- <code>pip install https://github.com/nytud/emmorphpy/releases/download/v1.1.0/emmorphpy-1.1.0-py3-none-any.whl</code>
-- <code>pip install https://github.com/vadno/emmorph2ud2/releases/download/v1.0.1/emmorph2ud2-1.0.1-py3-none-any.whl</code></p>
+<p><code>emMorph</code> depends on <code>hfst</code>, which must be installed by the package manager of your OS. In Debian/Ubuntu: <code>apt install hfst</code>. Further on, one must also install the tool's python wrapper and the UD converter:</p>
+<ul>
+<li><code>pip install https://github.com/nytud/emmorphpy/releases/download/v1.1.0/emmorphpy-1.1.0-py3-none-any.whl</code></li>
+<li><code>pip install https://github.com/vadno/emmorph2ud2/releases/download/v1.0.1/emmorph2ud2-1.0.1-py3-none-any.whl</code></li>
+</ul>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
 <p>First we need to create a wrapper for <code>emMorph</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">spacy.tokens</span> <span class="kn">import</span> <span class="n">Doc</span><span class="p">,</span> <span class="n">Token</span><span class="p">,</span> <span class="n">MorphAnalysis</span>
