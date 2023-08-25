@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="If you use any of the models or HuSpaCy as library in your research, please cite this paper:">
+        <meta name="description" content="Industrial-strength Hungarian natural language processing">
       
       
         <meta name="author" content="György Orosz, SzegedAI">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://huspacy.github.io/huspacy/publications/">
       
       <link rel="icon" href="../../assets/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-8.5.10">
     
     
       
@@ -261,7 +261,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../models_gen/" class="md-tabs__link">
+      <a href="../../models/" class="md-tabs__link">
         Models
       </a>
     </li>
@@ -764,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/" class="md-nav__link">
+      <a href="../../models/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -806,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/index_md/" class="md-nav__link">
+      <a href="../../models/index_md/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -820,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/install_md/" class="md-nav__link">
+      <a href="../../models/install_md/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -897,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/index_lg/" class="md-nav__link">
+      <a href="../../models/index_lg/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -911,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/install_lg/" class="md-nav__link">
+      <a href="../../models/install_lg/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -988,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/index_trf/" class="md-nav__link">
+      <a href="../../models/index_trf/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1002,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/install_trf/" class="md-nav__link">
+      <a href="../../models/install_trf/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -1079,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/index_trf_xl/" class="md-nav__link">
+      <a href="../../models/index_trf_xl/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1093,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models_gen/install_trf_xl/" class="md-nav__link">
+      <a href="../../models/install_trf_xl/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -1502,9 +1502,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Citing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Citing
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-articles" class="md-nav__link">
+    Main articles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supplemental-papers" class="md-nav__link">
+    Supplemental papers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1551,6 +1589,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-articles" class="md-nav__link">
+    Main articles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supplemental-papers" class="md-nav__link">
+    Supplemental papers
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1570,30 +1630,47 @@
 
 
 <h1 id="citing"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 8.609c-.848.536-1.436.83-2.146 1.245-4.152 2.509-8.15 5.295-11.247 8.981l-1.488 1.817-4.568-7.268c1.021.814 3.564 3.098 4.603 3.599l3.356-2.526c2.336-1.644 8.946-5.226 11.49-5.848ZM8.046 15.201c.346.277.692.537.969.744.761-3.668.121-7.613-1.886-11.039 3.374-.052 6.731-.087 10.105-.139a14.794 14.794 0 0 1 1.298 5.295c.294-.156.588-.294.883-.433-.104-1.868-.641-3.91-1.662-6.263-4.602-.018-9.188-.018-13.79-.018 2.993 3.547 4.36 7.839 4.083 11.853Zm-.623-.484c.087.086.191.155.277.225-.138-3.409-1.419-6.887-3.824-9.881H1.73c3.098 2.855 4.984 6.299 5.693 9.656Zm-.744-.658c.104.087.208.173.329.277-.9-2.526-2.492-5.018-4.741-7.198H0c2.89 2.076 5.122 4.481 6.679 6.921Z"/></svg></span> Citing<a class="headerlink" href="#citing" title="Permanent link">#</a></h1>
-<p>If you use any of the models or HuSpaCy as library in your research, please cite this <a href="https://arxiv.org/abs/2201.01956">paper</a>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nc">@article</span><span class="p">{</span><span class="nl">HuSpaCy:2021</span><span class="p">,</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{HuSpaCy: an industrial-strength Hungarian natural language processing toolkit}}</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{XVIII. Magyar Sz{\&#39;a}m{\&#39;\i}t{\&#39;o}g{\&#39;e}pes Nyelv{\&#39;e}szeti Konferencia}}</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Orosz, Gy{\&quot;o}rgy and Sz{\&#39; a}nt{\&#39; o}, Zsolt and Berkecz, P{\&#39; e}ter and Szab{\&#39; o}, Gerg{\H o} and Farkas, Rich{\&#39; a}rd}</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="na">location</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{Szeged}}</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2022}</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+<h2 id="main-articles">Main articles<a class="headerlink" href="#main-articles" title="Permanent link">#</a></h2>
+<p>If you use HuSpaCy or any of its models, please cite it as: </p>
+<p><a href="https://arxiv.org/abs/2308.12635"><img alt="arxiv" src="http://img.shields.io/badge/cs.CL-arXiv%3A2308.12635-B31B1B.svg" /></a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nc">@InProceedings</span><span class="p">{</span><span class="nl">HuSpaCy:2023</span><span class="p">,</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="na">author</span><span class="p">=</span><span class="w"> </span><span class="s">{&quot;Orosz, Gy{\&quot;o}rgy and Szab{\&#39;o}, Gerg{\H{o}} and Berkecz, P{\&#39;e}ter and Sz{\&#39;a}nt{\&#39;o}, Zsolt and Farkas, Rich{\&#39;a}rd&quot;}</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="na">editor</span><span class="p">=</span><span class="w"> </span><span class="s">{&quot;Ek{\v{s}}tein, Kamil and P{\&#39;a}rtl, Franti{\v{s}}ek and Konop{\&#39;i}k, Miloslav&quot;}</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{&quot;Advancing Hungarian Text Processing with HuSpaCy: Efficient and Accurate NLP Pipelines&quot;}}</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{&quot;Text, Speech, and Dialogue&quot;}}</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2023&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="na">publisher</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{&quot;Springer Nature Switzerland&quot;}}</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="na">address</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{&quot;Cham&quot;}}</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;58--69&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="na">isbn</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;978-3-031-40498-6&quot;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
 </code></pre></div>
+<p><a href="https://arxiv.org/abs/2201.01956"><img alt="arxiv" src="http://img.shields.io/badge/cs.CL-arXiv%3A2201.01956-B31B1B.svg" /></a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nc">@InProceedings</span><span class="p">{</span><span class="nl">HuSpaCy:2021</span><span class="p">,</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{HuSpaCy: an industrial-strength Hungarian natural language processing toolkit}}</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{XVIII. Magyar Sz{\&#39;a}m{\&#39;\i}t{\&#39;o}g{\&#39;e}pes Nyelv{\&#39;e}szeti Konferencia}}</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Orosz, Gy{\&quot;o}rgy and Sz{\&#39; a}nt{\&#39; o}, Zsolt and Berkecz, P{\&#39; e}ter and Szab{\&#39; o}, Gerg{\H o} and Farkas, Rich{\&#39; a}rd}</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="na">location</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{Szeged}}</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;59--73&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2022}</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="supplemental-papers">Supplemental papers<a class="headerlink" href="#supplemental-papers" title="Permanent link">#</a></h2>
 <p>If you use the lemmatizer of HuSpaCy in your research, please cite this <a href="https://arxiv.org/abs/2306.07636">paper</a>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nc">@article</span><span class="p">{</span><span class="nl">berkecz2023hybrid</span><span class="p">,</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{{Hybrid lemmatization in HuSpaCy}}</span><span class="p">,</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{{Berkecz, P{\&#39;e}ter and Orosz, Gy{\&quot;o}rgy and Sz{\&#39;a}nt{\&#39;o}, Zsolt and Szab{\&#39;o}, Gerg{\H{o}} and Farkas, Rich{\&#39;a}rd}}</span><span class="p">,</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="na">journal</span><span class="p">=</span><span class="s">{{XIX. Magyar Sz{\&#39;a}m{\&#39;\i}t{\&#39;o}g{\&#39;e}pes Nyelv{\&#39;e}szeti Konferencia}}</span><span class="p">,</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="na">year</span><span class="p">=</span><span class="s">{2023}</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
-</code></pre></div>
-<p>If you use one of the transformer models in your research, please cite this <a href="http://acta.bibl.u-szeged.hu/78421/1/msznykonf_019_305-317..pdf">paper</a>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nc">@article</span><span class="p">{</span><span class="nl">szabotransformer</span><span class="p">,</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{{Transformer-alap{\&#39;u} HuSpaCy el{\H{o}}elemz{\H{o}} l{\&#39;a}ncok}}</span><span class="p">,</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{{Szab{\&#39;o}, Gerg{\H{o}} and Orosz, Gy{\&quot;o}rgy and Sz{\&#39;a}nt{\&#39;o}, Zsolt and Berkecz, P{\&#39;e}ter and Farkas, Rich{\&#39;a}rd}}</span><span class="p">,</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="na">journal</span><span class="p">=</span><span class="s">{{XIX. Magyar Sz{\&#39;a}m{\&#39;\i}t{\&#39;o}g{\&#39;e}pes Nyelv{\&#39;e}szeti Konferencia}}</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nc">@InProceedings</span><span class="p">{</span><span class="nl">berkecz2023hybrid</span><span class="p">,</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{{Hybrid lemmatization in HuSpaCy}}</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{{Berkecz, P{\&#39;e}ter and Orosz, Gy{\&quot;o}rgy and Sz{\&#39;a}nt{\&#39;o}, Zsolt and Szab{\&#39;o}, Gerg{\H{o}} and Farkas, Rich{\&#39;a}rd}}</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="na">booktitle</span><span class="p">=</span><span class="s">{{XIX. Magyar Sz{\&#39;a}m{\&#39;\i}t{\&#39;o}g{\&#39;e}pes Nyelv{\&#39;e}szeti Konferencia}}</span><span class="p">,</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="na">year</span><span class="p">=</span><span class="s">{2023}</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>If you use one of the transformer models in your research, please cite this <a href="http://acta.bibl.u-szeged.hu/78421/1/msznykonf_019_305-317..pdf">paper</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nc">@InProceedings</span><span class="p">{</span><span class="nl">szabo2023transformer</span><span class="p">,</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{{Transformer-alap{\&#39;u} HuSpaCy el{\H{o}}elemz{\H{o}} l{\&#39;a}ncok}}</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{{Szab{\&#39;o}, Gerg{\H{o}} and Orosz, Gy{\&quot;o}rgy and Sz{\&#39;a}nt{\&#39;o}, Zsolt and Berkecz, P{\&#39;e}ter and Farkas, Rich{\&#39;a}rd}}</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="na">booktitle</span><span class="p">=</span><span class="s">{{XIX. Magyar Sz{\&#39;a}m{\&#39;\i}t{\&#39;o}g{\&#39;e}pes Nyelv{\&#39;e}szeti Konferencia}}</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="na">year</span><span class="p">=</span><span class="s">{2023}</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}</span>
 </code></pre></div>
 <p>Additionally, please indicate the version of the model you used so that your research can be reproduced.</p>
 
@@ -1602,7 +1679,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2023</span>
       
     
   </small>
