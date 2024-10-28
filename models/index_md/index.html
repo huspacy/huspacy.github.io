@@ -14,8 +14,15 @@
       
         <link rel="canonical" href="https://huspacy.github.io/models/index_md/">
       
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../install_md/">
+      
+      
       <link rel="icon" href="../../assets/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
@@ -23,15 +30,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -47,7 +56,7 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -56,11 +65,9 @@
   
   
 
-
-  <script id="__analytics">function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-246297792-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-246297792-1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-246297792-1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-246297792-1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
   
-    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
   
 
     
@@ -76,11 +83,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -105,11 +109,12 @@
     <a href="../.." title="HuSpaCy" class="md-header__button md-logo" aria-label="HuSpaCy" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4m-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -128,44 +133,50 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
-            </label>
-          
-        
-          
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-          
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
-          
-            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -173,24 +184,27 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -202,7 +216,7 @@
         <a href="https://github.com/huspacy/huspacy" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     huspacy/huspacy
@@ -221,34 +235,41 @@
           
             
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  
 
-
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../huspacy/installation/" class="md-tabs__link">
+          
+  
+  Docs
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../huspacy/installation/" class="md-tabs__link">
-        Docs
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -257,67 +278,80 @@
   
     
   
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Models
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
-        Models
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
-  
-  
-
-
   
   
   
     
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../examples/anonymizer/" class="md-tabs__link">
+          
+  
+  Recipes
 
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../examples/anonymizer/" class="md-tabs__link">
-        Recipes
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
+    
   
 
       
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="https://huggingface.co/spaces/huspacy/demo" class="md-tabs__link">
+        
+  
+    
+  
+  Demo
 
-
-  <li class="md-tabs__item">
-    <a href="https://huggingface.co/spaces/huspacy/demo" class="md-tabs__link">
-      Demo
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contact/" class="md-tabs__link">
+          
+  
+  About
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../contact/" class="md-tabs__link">
-        About
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -337,6 +371,7 @@
                   <div class="md-sidebar__inner">
                     
 
+
   
 
 
@@ -345,7 +380,7 @@
     <a href="../.." title="HuSpaCy" class="md-nav__button md-logo" aria-label="HuSpaCy" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4m-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
 
     </a>
     HuSpaCy
@@ -355,7 +390,7 @@
       <a href="https://github.com/huspacy/huspacy" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     huspacy/huspacy
@@ -367,14 +402,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
+  
+  <span class="md-ellipsis">
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -382,450 +422,662 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Docs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Docs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Docs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/installation/" class="md-nav__link">
-        Installation
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/quickstart/" class="md-nav__link">
-        Quickstart
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+      
+      
+        
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_3">
-          API
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="API" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_3">
-          <span class="md-nav__icon md-icon"></span>
-          API
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
           
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/__init__/" class="md-nav__link">
-        huspacy
+        
+  
+  <span class="md-ellipsis">
+    huspacy
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_2" type="checkbox" id="__nav_2_3_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_3_2">
-          components
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="components" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          components
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
           
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    components
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/components/edit_tree_lemmatizer/" class="md-nav__link">
-        edit_tree_lemmatizer
+        
+  
+  <span class="md-ellipsis">
+    edit_tree_lemmatizer
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/components/lemma_postprocessing/" class="md-nav__link">
-        lemma_postprocessing
+        
+  
+  <span class="md-ellipsis">
+    lemma_postprocessing
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/components/lookup_lemmatizer/" class="md-nav__link">
-        lookup_lemmatizer
+        
+  
+  <span class="md-ellipsis">
+    lookup_lemmatizer
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_3" type="checkbox" id="__nav_2_3_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_3_3">
-          extra
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="extra" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_3">
-          <span class="md-nav__icon md-icon"></span>
-          extra
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
           
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    extra
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            extra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/extra/sentencizer/" class="md-nav__link">
-        sentencizer
+        
+  
+  <span class="md-ellipsis">
+    sentencizer
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/extra/roman_num_converter/" class="md-nav__link">
-        roman_num_converter
+        
+  
+  <span class="md-ellipsis">
+    roman_num_converter
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_4" type="checkbox" id="__nav_2_3_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_3_4">
-          integrations
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="integrations" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_3_4">
-          <span class="md-nav__icon md-icon"></span>
-          integrations
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" >
+        
           
+          <label class="md-nav__link" for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    integrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            integrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/integrations/nerpp/" class="md-nav__link">
-        nerpp
+        
+  
+  <span class="md-ellipsis">
+    nerpp
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../reference/huspacy/integrations/sentiment/" class="md-nav__link">
-        sentiment
+        
+  
+  <span class="md-ellipsis">
+    sentiment
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/under_the_hood/" class="md-nav__link">
-        Under the hood
+        
+  
+  <span class="md-ellipsis">
+    Under the hood
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/develop/" class="md-nav__link">
-        Development
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/changelog/" class="md-nav__link">
-        Changelog
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
     
   
   
+  
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      
+        
+        
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        
       
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Models
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Models" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Models
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
   
   
+  
+    
+    
     
       
+      
+        
+          
+          
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_2">
-          hu_core_news_md
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="hu_core_news_md" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          hu_core_news_md
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
           
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    hu_core_news_md
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            hu_core_news_md
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Overview
+          
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
       
         
@@ -845,28 +1097,10 @@
       
         <li class="md-nav__item">
   <a href="#details" class="md-nav__link">
-    Details
+    <span class="md-ellipsis">
+      Details
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#label-scheme" class="md-nav__link">
-    Label Scheme
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#accuracy" class="md-nav__link">
-    Accuracy
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -877,632 +1111,922 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../install_md/" class="md-nav__link">
-        Installation
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../develop_md/" class="md-nav__link">
-        Development
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../changelog_md/" class="md-nav__link">
-        Changelog
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
       
+      
+        
+          
+          
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_3">
-          hu_core_news_lg
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="hu_core_news_lg" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_3">
-          <span class="md-nav__icon md-icon"></span>
-          hu_core_news_lg
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
           
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    hu_core_news_lg
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            hu_core_news_lg
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../index_lg/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../install_lg/" class="md-nav__link">
-        Installation
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../develop_lg/" class="md-nav__link">
-        Development
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../changelog_lg/" class="md-nav__link">
-        Changelog
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
       
+      
+        
+          
+          
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_4">
-          hu_core_news_trf
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="hu_core_news_trf" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_4">
-          <span class="md-nav__icon md-icon"></span>
-          hu_core_news_trf
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
           
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    hu_core_news_trf
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            hu_core_news_trf
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../index_trf/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../install_trf/" class="md-nav__link">
-        Installation
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../develop_trf/" class="md-nav__link">
-        Development
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../changelog_trf/" class="md-nav__link">
-        Changelog
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
       
+      
+        
+          
+          
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_5">
-          hu_core_news_trf_xl
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="hu_core_news_trf_xl" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_5">
-          <span class="md-nav__icon md-icon"></span>
-          hu_core_news_trf_xl
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
           
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    hu_core_news_trf_xl
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            hu_core_news_trf_xl
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../index_trf_xl/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../install_trf_xl/" class="md-nav__link">
-        Installation
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../develop_trf_xl/" class="md-nav__link">
-        Development
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../changelog_trf_xl/" class="md-nav__link">
-        Changelog
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
+  
+  
+  
+  
+    
+    
+    
       
-
-  
-  
-  
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Recipes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Recipes
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
           
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recipes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Recipes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     
+    
+    
+      
+      
+        
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_1">
-          Application examples
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Application examples" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_1">
-          <span class="md-nav__icon md-icon"></span>
-          Application examples
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
           
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Application examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Application examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../examples/anonymizer/" class="md-nav__link">
-        Anonymizer
+        
+  
+  <span class="md-ellipsis">
+    Anonymizer
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../examples/dbpedia/" class="md-nav__link">
-        Entity linking
+        
+  
+  <span class="md-ellipsis">
+    Entity linking
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../examples/keyphrase/" class="md-nav__link">
-        Keyphrase extraction
+        
+  
+  <span class="md-ellipsis">
+    Keyphrase extraction
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../examples/relation/" class="md-nav__link">
-        Relation extraction
+        
+  
+  <span class="md-ellipsis">
+    Relation extraction
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="https://huggingface.co/spaces/huspacy/example-applications" class="md-nav__link">
-        Demo
+        
+  
+  <span class="md-ellipsis">
+    Demo
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     
+    
+    
+      
+      
+        
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_2">
-          Tips and tricks
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Tips and tricks" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_2">
-          <span class="md-nav__icon md-icon"></span>
-          Tips and tricks
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
           
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tips and tricks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tips and tricks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../recipes/nerpp/" class="md-nav__link">
-        Extended entity recognition
+        
+  
+  <span class="md-ellipsis">
+    Extended entity recognition
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../recipes/sentiment/" class="md-nav__link">
-        Sentiment lexicons
+        
+  
+  <span class="md-ellipsis">
+    Sentiment lexicons
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../recipes/nounphrases/" class="md-nav__link">
-        Noun-phrase chunking
+        
+  
+  <span class="md-ellipsis">
+    Noun-phrase chunking
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../recipes/emmorph/" class="md-nav__link">
-        Integration with emMorph
+        
+  
+  <span class="md-ellipsis">
+    Integration with emMorph
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../recipes/sentencizer/" class="md-nav__link">
-        Rule-base sentencizer
+        
+  
+  <span class="md-ellipsis">
+    Rule-base sentencizer
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../recipes/roman_nums/" class="md-nav__link">
-        Roman numbers
+        
+  
+  <span class="md-ellipsis">
+    Roman numbers
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/usage_in_r/" class="md-nav__link">
-        Usage in R
+        
+  
+  <span class="md-ellipsis">
+    Usage in R
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../recipes/faq/" class="md-nav__link">
-        FAQ
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="https://huggingface.co/spaces/huspacy/demo" class="md-nav__link">
-        Demo
+        
+  
+  <span class="md-ellipsis">
+    Demo
+  </span>
+  
+
       </a>
     </li>
   
@@ -1510,76 +2034,110 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+      
+      
+        
+      
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
-          About
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="About" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          About
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
           
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../contact/" class="md-nav__link">
-        Contact
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/publications/" class="md-nav__link">
-        Citing
+        
+  
+  <span class="md-ellipsis">
+    Citing
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../huspacy/license/" class="md-nav__link">
-        License
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1612,28 +2170,10 @@
       
         <li class="md-nav__item">
   <a href="#details" class="md-nav__link">
-    Details
+    <span class="md-ellipsis">
+      Details
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#label-scheme" class="md-nav__link">
-    Label Scheme
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#accuracy" class="md-nav__link">
-    Accuracy
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1656,165 +2196,34 @@
 <p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
 <p>The model builds on the <a href="https://github.com/UniversalDependencies/UD_Hungarian-Szeged">Hungarian UD treebank</a> and the <a href="https://github.com/UniversalDependencies/UD_Hungarian-Szeged">NerKor corpus</a>, thus it is capable of predicting PoS and morphological tags, computing lemmata, providing dependency parses of sentences and marking named entities. The underlying components builds on a 100d word embedding trained the <a href="https://hlt.bme.hu/en/resources/webcorpus2">Hungarian Webcorpus 2.0</a></p>
 <h2 id="details">Details<a class="headerlink" href="#details" title="Permanent link">#</a></h2>
-<p>Core Hungarian model for HuSpaCy. Components: tok2vec, senter, tagger, morphologizer, lemmatizer, parser, ner</p>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Name</strong></td>
-<td><code>hu_core_news_md</code></td>
-</tr>
-<tr>
-<td><strong>Version</strong></td>
-<td><code>3.7.0</code></td>
-</tr>
-<tr>
-<td><strong>spaCy</strong></td>
-<td><code>&gt;=3.7.0,&lt;3.8.0</code></td>
-</tr>
-<tr>
-<td><strong>Default Pipeline</strong></td>
-<td><code>tok2vec</code>, <code>senter</code>, <code>tagger</code>, <code>morphologizer</code>, <code>lookup_lemmatizer</code>, <code>trainable_lemmatizer</code>, <code>parser</code>, <code>ner</code></td>
-</tr>
-<tr>
-<td><strong>Components</strong></td>
-<td><code>tok2vec</code>, <code>senter</code>, <code>tagger</code>, <code>morphologizer</code>, <code>lookup_lemmatizer</code>, <code>trainable_lemmatizer</code>, <code>parser</code>, <code>ner</code></td>
-</tr>
-<tr>
-<td><strong>Vectors</strong></td>
-<td>-1 keys, 200000 unique vectors (100 dimensions)</td>
-</tr>
-<tr>
-<td><strong>Sources</strong></td>
-<td><a href="https://universaldependencies.org/treebanks/hu_szeged/index.html">UD Hungarian Szeged</a> (Richárd Farkas, Katalin Simkó, Zsolt Szántó, Viktor Varga, Veronika Vincze (MTA-SZTE Research Group on Artificial Intelligence))<br><a href="https://github.com/nytud/NYTK-NerKor">NYTK-NerKor Corpus</a> (Eszter Simon, Noémi Vadász (Department of Language Technology and Applied Linguistics))<br><a href="https://rgai.inf.u-szeged.hu/node/130">Szeged NER Corpus</a> (György Szarvas, Richárd Farkas, László Felföldi, András Kocsor, János Csirik (MTA-SZTE Research Group on Artificial Intelligence))<br><a href="https://huggingface.co/huspacy/hu_vectors_web_lg">Hungarian lg Floret vectors</a> (Szeged AI)</td>
-</tr>
-<tr>
-<td><strong>License</strong></td>
-<td><code>cc-by-sa-4.0</code></td>
-</tr>
-<tr>
-<td><strong>Author</strong></td>
-<td><a href="https://github.com/huspacy/huspacy">SzegedAI, MILAB</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="label-scheme">Label Scheme<a class="headerlink" href="#label-scheme" title="Permanent link">#</a></h3>
-<details>
 
-<summary>View label scheme (1209 labels for 4 components)</summary>
 
-| Component | Labels |
-| --- | --- |
-| **`tagger`** | `ADJ`, `ADP`, `ADV`, `AUX`, `CCONJ`, `DET`, `INTJ`, `NOUN`, `NUM`, `PART`, `PRON`, `PROPN`, `PUNCT`, `SCONJ`, `SYM`, `VERB`, `X` |
-| **`morphologizer`** | `Definite=Def\|POS=DET\|PronType=Art`, `Case=Ine\|Number=Sing\|POS=NOUN`, `POS=ADV`, `Case=Nom\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|POS=ADJ\|VerbForm=PartPres`, `Case=Nom\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Nom\|Number=Sing\|POS=NOUN`, `Definite=Ind\|POS=DET\|PronType=Tot`, `Case=Ade\|Number=Sing\|POS=NOUN`, `Case=Nom\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `POS=PUNCT`, `Case=Nom\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Ind\|POS=DET\|PronType=Ind`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `POS=ADP`, `POS=CCONJ`, `Case=Del\|Number=Sing\|POS=NOUN`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Sbl\|Number=Sing\|POS=NOUN`, `Case=Nom\|Number=Sing\|POS=ADJ\|VerbForm=PartPast`, `Case=Del\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|POS=PROPN`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Sing\|POS=NOUN`, `Case=Sup\|Number=Sing\|POS=PROPN`, `Case=Ess\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Sup\|Number=Plur\|POS=NOUN`, `Degree=Pos\|POS=ADV`, `Case=Sup\|Number=Sing\|POS=NOUN`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Cau\|Number=Plur\|POS=NOUN`, `Case=Cau\|Number=Sing\|POS=NOUN`, `Case=Gen\|Number=Sing\|POS=NOUN`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Tra\|Number=Sing\|POS=ADJ\|VerbForm=PartPres`, `Case=Nom\|Number=Plur\|POS=NOUN`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Definite=Def\|Mood=Pot\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ins\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Ins\|Number=Sing\|POS=NOUN`, `POS=ADV\|PronType=Neg`, `Case=Ine\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Gen\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `POS=SCONJ`, `Case=Acc\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Sbl\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Abl\|Number=Sing\|POS=NOUN`, `Case=Dat\|Number=Sing\|POS=NOUN`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|Voice=Act`, `POS=VERB\|VerbForm=Inf\|Voice=Act`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Nom\|Degree=Sup\|Number=Sing\|POS=ADJ`, `POS=ADV\|PronType=Dem`, `Case=Ins\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ade\|Degree=Pos\|Number=Sing\|POS=ADJ`, `POS=ADV\|PronType=Int`, `Case=Tra\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Definite=Ind\|Mood=Pot\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Sbl\|Number=Sing\|POS=PROPN`, `Case=Sbl\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Definite=Ind\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `POS=PART`, `Case=Sup\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `POS=ADV\|PronType=Tot`, `Case=Ill\|Definite=Ind\|POS=DET\|PronType=Ind`, `Number=Sing\|POS=VERB\|Person=3\|VerbForm=Inf\|Voice=Act`, `Case=Ill\|Number=Sing\|POS=NOUN`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Nom\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|Voice=Act`, `Definite=Ind\|Mood=Cnd\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Sup\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Ade\|Number=Sing\|POS=ADJ\|VerbForm=PartPast`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ess\|Number=Sing\|POS=ADJ\|VerbForm=PartPres`, `Case=Acc\|Number=Sing\|POS=PROPN`, `Case=Nom\|Number=Sing\|POS=ADJ\|VerbForm=PartFut`, `Case=Ine\|NumType=Card\|Number=Sing\|POS=NUM`, `Definite=Ind\|Mood=Pot\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Plur\|POS=NOUN`, `Case=Del\|Number=Plur\|POS=NOUN`, `Case=Gen\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Nom\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Tra\|Number=Sing\|POS=NOUN`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Definite=Ind\|Mood=Imp\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Def\|Mood=Imp\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Acc\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Definite=Ind\|POS=DET\|PronType=Art`, `Case=Dat\|Number=Plur\|POS=NOUN`, `Case=Ins\|Number=Plur\|POS=NOUN`, `Case=Sbl\|Number=Plur\|POS=NOUN`, `Case=Ela\|Number=Sing\|POS=NOUN`, `Definite=Ind\|Mood=Pot\|Number=Plur\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=All\|Number=Sing\|POS=NOUN`, `Case=Ine\|Number=Plur\|POS=NOUN`, `Case=Dat\|Number=Plur\|POS=ADJ\|VerbForm=PartPres`, `Case=Ela\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Abl\|Number=Sing\|POS=PROPN`, `Case=Cau\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=Ins\|Number=Sing\|POS=PROPN`, `Case=Ess\|Number=Sing\|POS=ADJ\|VerbForm=PartPast`, `Number=Plur\|POS=VERB\|Person=3\|VerbForm=Inf\|Voice=Act`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=All\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Abl\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Degree=Pos\|Number=Plur\|POS=ADJ`, `POS=ADV\|PronType=Rel`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Cau`, `Case=Del\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Gen\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Case=Ill\|Number=Plur\|POS=NOUN`, `Case=Ela\|Number=Plur\|POS=NOUN`, `Case=Ill\|Number=Sing\|POS=PROPN`, `Case=Ela\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Definite=Def\|POS=DET\|PronType=Ind`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Ter\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `POS=ADV\|VerbForm=Conv`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Sup\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Aspect=Iter\|Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Aspect=Iter\|Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Ind\|Mood=Pot\|Number=Sing\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Definite=Def\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Dis\|Number=Sing\|POS=NOUN`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Ade\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=All\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Dat\|Number=Plur\|POS=ADJ\|VerbForm=PartPast`, `Case=Dat\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Plur\|POS=PROPN`, `Case=Nom\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Cau\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Dat\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Ine\|Number=Sing\|POS=PROPN`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Cau`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Cau`, `Case=Abs\|Number=Sing\|POS=NOUN`, `Case=Ade\|Number=Sing\|POS=PROPN`, `Case=Ins\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Sup\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Abl\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Gen\|Number=Sing\|POS=PROPN`, `Case=Del\|Number=Sing\|POS=PROPN`, `Case=Sbl\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Loc\|Number=Sing\|POS=NOUN`, `Case=Acc\|Definite=Ind\|POS=DET\|PronType=Ind`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Definite=Ind\|Mood=Pot\|Number=Plur\|POS=VERB\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Definite=Ind\|Mood=Cnd\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|Voice=Act`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Ter\|Number=Sing\|POS=NOUN`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `POS=X`, `Definite=Def\|Mood=Cnd\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Gen\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Ind\|Mood=Imp\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Del\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Neg`, `Case=Tra\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Degree=Pos\|POS=ADV\|PronType=Dem`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|Reflex=Yes`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Definite=Ind\|Mood=Cnd,Pot\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ade\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Neg`, `Definite=Def\|Mood=Imp\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Aspect=Iter\|Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=Ine\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Def\|Mood=Cnd,Pot\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Sbl\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=All\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Ess\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Definite=Ind\|Mood=Cnd\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Dat\|Number=Sing\|POS=PROPN`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Nom\|Number=Plur\|POS=ADJ\|VerbForm=PartPres`, `Case=Sbl\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Ess\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Acc\|Number=Plur\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3\|VerbForm=PartPast`, `Definite=Def\|Mood=Pot\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Definite=Ind\|POS=DET\|PronType=Neg`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ter\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Definite=Def\|Mood=Pot\|Number=Sing\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Definite=Def\|Mood=Pot\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Nom\|Number=Plur\|POS=ADJ\|VerbForm=PartPast`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Definite=Ind\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Case=Acc\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=Acc\|Number=Plur\|POS=ADJ\|VerbForm=PartPast`, `Case=Dat\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Cau\|Number=Sing\|POS=PROPN`, `Case=Abs\|Number=Sing\|POS=ADJ\|VerbForm=PartPres`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Ine\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Ess\|Number=Sing\|POS=NOUN`, `Case=Ter\|Number=Plur\|POS=NOUN`, `Case=Tem\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `POS=INTJ`, `Case=Ine\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Number=Plur\|POS=VERB\|Person=1\|VerbForm=Inf\|Voice=Act`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Definite=Ind\|Mood=Pot\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=All\|Number=Sing\|POS=PROPN`, `Case=Ter\|Number=Sing\|POS=PROPN`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Sbl\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Gen\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=3\|Tense=Pres\|Voice=Act`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Neg`, `Case=Sbl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Definite=Ind\|Mood=Imp\|Number=Plur\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Definite=Ind\|Mood=Cnd\|Number=Plur\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Definite=Ind\|Mood=Cnd\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Sbl\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Definite=Def\|POS=DET\|PronType=Prs`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ill\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Del\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Acc\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ill\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Definite=Ind\|Mood=Imp,Pot\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Definite=Def\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Definite=Def\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Definite=Ind\|Mood=Pot\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Def\|Mood=Pot\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Cau\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Ins\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Case=Ins\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=2\|PronType=Prs`, `Definite=2\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Case=Sbl\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Definite=Ind\|Mood=Pot\|Number=Sing\|POS=VERB\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=All\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=All\|Number=Plur\|POS=NOUN`, `Case=Ela\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Case=Abs\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Ine\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Case=Ine\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs\|Reflex=Yes`, `Case=Ins\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `POS=AUX\|VerbForm=Inf\|Voice=Act`, `Case=Nom\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Definite=Def\|Mood=Cnd\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Def\|Mood=Cnd\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ela\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Case=Nom\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=All\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Aspect=Iter\|Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Gen\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Ter\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Gen\|Number=Plur\|POS=NOUN`, `Case=Tem\|Number=Sing\|POS=NOUN`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Acc\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Ade\|Number=Plur\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Ins\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `POS=ADV\|PronType=Ind`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ill\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Definite=Def\|POS=DET\|PronType=Int`, `Case=Gen\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Definite=Ind\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Abs\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Del\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Acc\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Acc\|Number=Plur\|POS=PROPN`, `Case=Abl\|NumType=Card\|Number=Sing\|POS=NUM`, `Definite=Def\|Mood=Pot\|Number=Plur\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Abs\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Definite=Def\|Mood=Pot\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Abl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Ela\|Number=Sing\|POS=PROPN`, `Case=Ade\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ela\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Sbl\|Number=Sing\|POS=DET\|Person=3\|PronType=Dem`, `Definite=Def\|Mood=Imp,Pot\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Def\|POS=DET\|PronType=Tot`, `Definite=Def\|POS=DET\|PronType=Neg`, `Case=Ins\|Degree=Cmp\|Number=Plur\|POS=ADJ`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Acc\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Sup\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Sbl\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Dat\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=3\|Tense=Pres\|Voice=Act`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=Gen\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=3\|Tense=Past\|VerbForm=Fin\|Voice=Cau`, `Case=Sbl\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Tra\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=Ess\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ess\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Sup\|Number=Plur\|POS=DET\|Person=3\|PronType=Dem`, `Case=Acc\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Nom\|Degree=Pos\|Number=Sing\|POS=ADJ\|VerbForm=PartPres`, `Case=Nom\|Degree=Pos\|Number=Sing\|POS=ADJ\|VerbForm=PartPast`, `Case=Ess\|Degree=Pos\|Number=Sing\|POS=ADJ\|VerbForm=PartPres`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Degree=Cmp\|POS=ADV`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=2\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=2\|PronType=Prs`, `Case=All\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|Poss=Yes\|PronType=Prs`, `Case=Ela\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ins\|NumType=Card\|Number=Sing\|POS=NUM`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Degree=Pos\|Number=Sing\|POS=ADJ\|VerbForm=PartFut`, `Case=Dat\|Degree=Pos\|Number=Plur\|POS=ADJ\|VerbForm=PartPast`, `Degree=Sup\|POS=ADV`, `Case=Acc\|NumType=Card\|Number=Sing\|POS=NUM`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ine\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ade\|Number=Plur\|POS=NOUN`, `Case=Acc\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Tra\|Degree=Pos\|Number=Sing\|POS=ADJ\|VerbForm=PartPres`, `Case=Nom\|Degree=Pos\|Number=Plur\|POS=ADJ\|VerbForm=PartPres`, `Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Inf\|Voice=Act`, `Case=All\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Cau\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Nom\|Degree=Pos\|Number=Sing\|Number[psed]=Sing\|POS=ADJ`, `Case=Nom\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ela\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Ine\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Mood=Pot\|POS=VERB\|VerbForm=Inf\|Voice=Act`, `Case=Ela\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Ade\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Definite=Def\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Inf\|Voice=Act`, `Case=Ela\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs\|Reflex=Yes`, `Case=Nom\|NumType=Card\|Number=Plur\|POS=NUM`, `Case=Sbl\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Definite=Ind\|Mood=Imp\|Number=Plur\|POS=VERB\|Person=3\|Tense=Pres\|VerbForm=Fin\|Voice=Cau`, `Case=Ade\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Dat\|Degree=Pos\|Number=Plur\|POS=ADJ\|VerbForm=PartPres`, `Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Inf\|Voice=Act`, `Case=Ine\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Number=Plur\|POS=ADV\|Person=1\|PronType=PrsPron`, `POS=ADV\|PronType=v`, `Definite=Ind\|Mood=Imp\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Abl\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Number=Sing\|POS=ADV\|Person=3\|PronType=PrsPron`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Nom\|NumType[sem]=Time\|Number=Sing\|POS=NUM`, `Case=Tem\|NumType[sem]=Time\|Number=Sing\|POS=NUM`, `Case=Abl\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Number=Sing\|POS=ADV\|Person=1\|PronType=PrsPron`, `Case=Ter\|NumType[sem]=Time\|Number=Sing\|POS=NUM`, `Case=Ill\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=2\|PronType=Prs`, `Number=Sing\|POS=VERB\|Person=1\|VerbForm=Inf\|Voice=Act`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Ine\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Number=Plur\|POS=ADV\|Person=3\|PronType=PrsPron`, `Case=Ins\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Ela\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Ins\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ter\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Sbl\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Cas=6\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ela\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Sup\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Ade\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Definite=Ind\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Sup\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Sbl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Del\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Nom\|NumType=Dist\|Number=Sing\|POS=NUM`, `Case=Sup\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Abl\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Definite=Ind\|Mood=Cnd\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Sbl\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=1\|Tense=Pres\|Voice=Act`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=1\|Tense=Pres\|Voice=Act`, `Case=Acc\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=1`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Number=Plur\|POS=ADV\|Person=2\|PronType=PrsPron`, `Case=Ine\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=1\|Tense=Pres\|Voice=Act`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=All\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Dat\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Definite=Ind\|Mood=Cnd\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Sup\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Gen\|Degree=Cmp\|Number=Plur\|POS=ADJ`, `Case=Nom\|Degree=Sup\|Number=Plur\|POS=ADJ`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Del\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Nom\|Degree=Cmp\|Number=Plur\|POS=ADJ`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Case=All\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=All\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Abl\|Number=Plur\|POS=NOUN`, `Case=Dat\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ade\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Cas=6\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|Poss=Yes\|PronType=Prs`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=2\|Poss=Yes\|PronType=Prs`, `Case=Gen\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ess\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Sbl\|NumType[sem]=Time\|Number=Sing\|POS=NUM`, `Case=All\|Number=Plur\|POS=PROPN`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|PronType=Ind`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Acc\|Degree=Cmp\|Number=Plur\|POS=ADJ`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ine\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Ade\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=2\|PronType=Prs`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=VERB\|Person=2\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Ins\|Number=Plur\|POS=PROPN`, `Case=Nom\|NumType=Ord\|Number=Plur\|POS=ADJ`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Definite=Def\|Mood=Cnd\|Number=Plur\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=All\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Nom\|NumType[sem]=Dot\|Number=Sing\|POS=NUM`, `Case=Sup\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Degree=Pos\|POS=ADV\|PronType=Ind`, `Case=Ela\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=1\|Tense=Pres\|Voice=Act`, `Case=Ade\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Sup\|NumType[sem]=Time\|Number=Sing\|POS=NUM`, `Case=Gen\|Number=Plur\|POS=PROPN`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Ins\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Ill\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Del\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Number=Sing\|POS=ADV\|Person=2\|PronType=PrsPron`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Gen\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Ill\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Degree=Cmp\|POS=ADV\|PronType=Dem`, `Case=Ins\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Ins\|NumType=Card\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ill\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Dat\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Del\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Ins\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=1\|PronType=Tot`, `Case=Gen\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Dat\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Acc\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Nom\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=1`, `Case=Sbl\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Tem\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Tem\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|NumType[sem]=Result\|Number=Sing\|POS=NUM`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Acc\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|Poss=Yes\|PronType=Prs`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Ade\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Dat\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|PronType=Tot`, `Case=Sbl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ela\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=2\|PronType=Prs`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=2\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Del\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Del\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Dat\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Definite=2\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=1\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=Com\|Number=Sing\|POS=NOUN`, `Case=Tra\|Number=Plur\|POS=NOUN`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=1\|PronType=Tot`, `Case=Ade\|Number=Plur\|POS=PROPN`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=2\|PronType=Prs`, `Case=Ess\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Dat\|Degree=Cmp\|Number=Plur\|POS=ADJ`, `Definite=Def\|Mood=Imp\|Number=Plur\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Sbl\|NumType[sem]=Quotient\|Number=Sing\|POS=NUM`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=3\|PronType=Int`, `Case=Del\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Del\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Ade\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ins\|NumType=Card\|Number=Plur\|POS=NUM`, `Case=Ess\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Del\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Cau\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Tem\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Ill\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Ill\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Nom\|Degree=Pos\|Number=Sing\|Number[psor]=Plur\|POS=ADJ\|Person[psor]=1`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Del\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Gen\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=1`, `Case=Gen\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Dat\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Gen\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Ins\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Dat\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=1`, `Case=Sbl\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Acc\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|PronType=Int`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Definite=Def\|Mood=Cnd\|Number=Plur\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Sbl\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Sup\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Tem\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Ins\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Tra\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Abs\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=All\|Number=Plur\|POS=PRON\|Person=1\|PronType=Tot`, `Case=Dat\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|PronType=Ind`, `Case=Ine\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Sup\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=VERB\|Person=2\|Tense=Past\|VerbForm=Fin\|Voice=Act`, `Case=All\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Cas=1\|Number=Sing\|POS=PROPN`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=2\|Tense=Pres\|Voice=Act`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Sbl\|Number=Sing\|POS=PRON\|Person=2\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|POS=PRON\|Person=2\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=1`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Sbl\|NumType[sem]=Result\|Number=Sing\|POS=NUM`, `Case=Nom\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Sbl\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Ind\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=3\|Tense=Past\|Voice=Act`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Ins\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Ela\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Gen\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Dat\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=1\|PronType=Tot`, `Definite=Ind\|Mood=Imp\|Number=Plur\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Cau\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Acc\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|PronType=Tot`, `Case=Abl\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Tra\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Cau\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Sup\|Number=Plur\|POS=PROPN`, `Case=Ess\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Definite=Def\|Mood=Cnd\|Number=Sing\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Dis\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Ill\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Nom\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=1`, `Case=Nom\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Cas=6\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=3\|PronType=Int`, `Case=Sup\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Sbl\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Sup\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Abl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Gen\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Abs\|Number=Plur\|POS=NOUN`, `Case=Sup\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|PronType=Tot`, `Case=Ine\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Tra\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Sbl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Ins\|Degree=Cmp\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Ade\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Sbl\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=All\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Abl\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PROPN\|Person[psor]=1`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Del\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Del\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=All\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Ade\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ter\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Nom\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=2\|Reflexive=Yes`, `Case=Dat\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Ins\|Number=Plur\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Sup\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Ine\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Acc\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Sbl\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Definite=Ind\|Mood=Cnd\|Number=Sing\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Ill\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Acc\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Gen\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Ade\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=All\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Ill\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Definite=2\|Mood=Cnd\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Cas=6\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Cau\|Number=Plur\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Abl\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Abs\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Acc\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|NumType=Card\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Cau\|Number=Plur\|POS=PRON\|Person=3\|PronType=Dem`, `Case=All\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Acc\|Degree=Sup\|Number=Plur\|POS=ADJ`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Case=Ade\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Ill\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Del\|Degree=Sup\|Number=Plur\|POS=ADJ`, `Case=Nom\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Cau\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Number=Sing\|POS=VERB\|Person=2\|VerbForm=Inf\|Voice=Act`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Acc\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Cau\|Degree=Cmp\|Number=Plur\|POS=ADJ`, `Case=Ine\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Ela\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Sup\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Cau\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Sbl\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Ter\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Tra\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Definite=Ind\|Mood=Cnd\|Number=Plur\|POS=VERB\|Person=2\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Acc\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Dat\|NumType=Card\|Number=Plur\|POS=NUM`, `Case=Dat\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Abl\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Tem\|Number=Plur\|POS=NOUN`, `Case=Abs\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Sbl\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ins\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=All\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Acc\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=All\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Nom\|Number=Plur\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Ade\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Ade\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=2\|PronType=Tot`, `Case=Abl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Cau\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Del\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Cau\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ill\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Ade\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Acc\|Number=Plur\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Ade\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Acc\|Number=Sing\|POS=PRON\|Person=2\|Reflexive=Yes`, `Case=Ins\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=All\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Ess\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Cau\|Degree=Sup\|Number=Plur\|POS=ADJ`, `Cas=6\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Tra\|NumType=Card\|Number=Sing\|POS=NUM`, `Number=Plur\|POS=VERB\|Person=2\|VerbForm=Inf\|Voice=Act`, `Case=Nom\|Degree=Pos\|Number=Plur\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Cas=6\|Number=Sing\|POS=NOUN`, `Case=Ins\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Ins\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Ela\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Sup\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Abl\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|PronType=Int`, `Case=Ill\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Case=Del\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Tra\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Sbl\|NumType=Card\|Number=Plur\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Acc\|NumType=Card\|Number=Plur\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Int`, `Case=Nom\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Ine\|Number=Sing\|POS=PRON\|Person=2\|Reflexive=Yes`, `Case=Abl\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Gen\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Gen\|NumType=Card\|Number=Plur\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|Poss=Yes\|PronType=Prs`, `Case=Ins\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=All\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Acc\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Tra\|Degree=Sup\|Number=Plur\|POS=ADJ`, `Case=Sbl\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Ins\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|PronType=Dem`, `Case=Nom\|Degree=Cmp\|Number=Plur\|Number[psed]=Sing\|POS=ADJ`, `Case=Acc\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Cau\|Number=Plur\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=2\|PronType=Ind`, `Case=All\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=All\|Number=Sing\|POS=PRON\|Person=3\|Poss=Yes\|PronType=Prs`, `Case=Tem\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Dat\|Number=Sing\|POS=PRON\|Person=3\|Poss=Yes\|PronType=Prs`, `Case=Ill\|Number=Sing\|POS=PRON\|Person=3\|Poss=Yes\|PronType=Prs`, `Case=Abl\|Number=Sing\|POS=PRON\|Person=3\|Poss=Yes\|PronType=Prs`, `Case=Cau\|Number=Plur\|POS=PROPN`, `Case=Ade\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ade\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=All\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Del\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Definite=Ind\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=2\|Tense=Pres\|Voice=Act`, `Definite=Def\|Mood=Ind\|Number=Plur\|POS=AUX\|Person=2\|Tense=Pres\|Voice=Act`, `Case=Sup\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Case=Tra\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Ins\|Number=Sing\|POS=PRON\|Person=2\|PronType=Prs`, `Case=Sup\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Nom\|NumType=Card\|Number=Plur\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Sbl\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Nom\|Number=Plur\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=All\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Ill\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ela\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Ela\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Del\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|PronType=Int`, `Case=Tra\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ter\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=All\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Ter\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=All\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Definite=Def\|Mood=Ind\|Number=Sing\|POS=AUX\|Person=2\|Tense=Pres\|Voice=Act`, `Case=Gen\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Cau\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Ins\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Gen\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|Poss=Yes\|PronType=Prs`, `Case=Del\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Tem\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Del\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Sup\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Ter\|Number=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Sup\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ine\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Abs\|Number=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=All\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Sup\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Cau\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Sup\|NumType=Ord\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Sup\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Abl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Nom\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Int`, `Case=Ela\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Dat\|NumType=Ord\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Ill\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=All\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=1`, `Case=Nom\|Number=Plur\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=1`, `Case=Ine\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=1`, `Case=Abl\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=1`, `Case=Ela\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Ade\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Ill\|Number=Sing\|Number[psor]=Plur\|POS=PROPN\|Person[psor]=1`, `Case=Ade\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=All\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Acc\|Degree=Pos\|Number=Plur\|Number[psor]=Plur\|POS=ADJ\|Person[psor]=3`, `Case=Dat\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Nom\|Number=Sing\|POS=SYM\|Type=w`, `Case=Gen\|Number=Sing\|POS=SYM\|Type=w`, `Case=Abl\|Number=Sing\|POS=SYM\|Type=w`, `Case=Acc\|Number=Sing\|POS=SYM\|Type=w`, `Case=Ade\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=All\|Number=Sing\|POS=SYM\|Type=w`, `Case=Tra\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Ins\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Abl\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|Degree=Pos\|Number=Plur\|Number[psed]=Sing\|POS=ADJ`, `Case=Sup\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Sup\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Nom\|NumType[sem]=Quotient\|Number=Sing\|POS=NUM`, `Case=Gen\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=PROPN\|Person[psor]=1`, `Case=Ins\|Number=Sing\|Number[psed]=Plur\|POS=NOUN`, `Case=Gen\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Ine\|Degree=Pos\|Number=Sing\|Number[psor]=Plur\|POS=ADJ\|Person[psor]=3`, `Case=Abs\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Ela\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Dat\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Gen\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|Number=Sing\|POS=SYM\|Type=o`, `Case=Gen\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Sup\|NumType=Card\|Number=Sing\|POS=NUM`, `Case=Nom\|NumType[sem]=Signed\|Number=Sing\|POS=NUM`, `Case=Com\|Number=Sing\|POS=PROPN`, `Case=Acc\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Ins\|Number=Sing\|Number[psed]=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Ill\|Number=Plur\|POS=PRON\|Person=1\|Reflexive=Yes`, `Case=Nom\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ins\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Gen\|NumType=Dist\|Number=Sing\|POS=NUM`, `Case=Nom\|NumType[sem]=Formula\|Number=Sing\|POS=NUM`, `Case=Del\|Number=Sing\|POS=SYM\|Type=w`, `Case=Ade\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Ins\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Nom\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Rel`, `Case=Ine\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|Degree=Pos\|Number=Sing\|Number[psor]=Plur\|POS=ADJ\|Person[psor]=3`, `Case=Ade\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Acc\|Number=Sing\|POS=SYM\|Type=o`, `Case=Ins\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ela\|Number=Sing\|POS=SYM\|Type=o`, `Case=Dat\|Degree=Pos\|Number=Plur\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=All\|Number=Plur\|Number[psed]=Sing\|POS=SYM\|Type=w`, `Case=Ade\|Number=Sing\|POS=SYM\|Type=w`, `Case=Sbl\|Number=Sing\|POS=SYM\|Type=w`, `Case=Ade\|NumType=Card\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ill\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Acc\|NumType=Card\|Number=Plur\|POS=NUM`, `Case=Ill\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Acc\|Degree=Sup\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Sup\|NumType=Card\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Dat\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Ill\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=3`, `Case=Sup\|Number=Sing\|POS=SYM\|Type=w`, `Case=Ine\|Degree=Pos\|Number=Plur\|POS=ADJ`, `Case=Gen\|Degree=Pos\|Number=Plur\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Ins\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Ela\|Number=Sing\|POS=SYM\|Type=w`, `Case=Sbl\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Nom\|Number=Sing\|POS=SYM\|Type=p`, `Case=Abl\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|NumType[sem]=Measure\|Number=Sing\|POS=NUM`, `Case=Abs\|Number=Sing\|POS=PROPN`, `Case=Ins\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Nom\|Number=Sing\|Number[psed]=Plur\|POS=NOUN`, `Case=Nom\|Number=Sing\|POS=SYM\|Type=m`, `Case=Acc\|Number=Sing\|POS=SYM\|Type=m`, `Case=Sup\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Ine\|Number=Plur\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=SYM\|Type=o`, `Case=Ins\|Number=Sing\|POS=SYM\|Type=o`, `Case=Ins\|Number=Sing\|POS=SYM\|Type=w`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=3\|PronType=Int`, `Case=Acc\|Number=Sing\|Number[psed]=Plur\|POS=NOUN`, `Case=Gen\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Gen\|Number=Plur\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Sbl\|Number=Plur\|POS=PRON\|Person=3\|PronType=Int`, `Case=Abl\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Acc\|Degree=Pos\|Number=Plur\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Abs\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Ill\|Number=Sing\|POS=SYM\|Type=w`, `Case=Ela\|Number=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Abl\|NumType[sem]=Time\|Number=Sing\|POS=NUM`, `Case=Gen\|Degree=Sup\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Abs\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|Poss=Yes\|PronType=Prs`, `Case=Sup\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Gen\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Gen\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Ins\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Sup\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Abs\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Acc\|Degree=Pos\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Acc\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ter\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Dat\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Acc\|NumType[sem]=Percent\|Number=Sing\|POS=NUM`, `Case=Ter\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ade\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ins\|NumType[sem]=Percent\|Number=Sing\|POS=NUM`, `Case=Ins\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Gen\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Dat\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Sbl\|NumType[sem]=Percent\|Number=Sing\|POS=NUM`, `Case=Ine\|NumType[sem]=Percent\|Number=Sing\|POS=NUM`, `Case=All\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ade\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Nom\|NumType[sem]=Percent\|Number=Sing\|POS=NUM`, `Case=All\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Abl\|NumType=Card\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ter\|NumType=Card\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Acc\|NumType=Card\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ter\|NumType[sem]=Formula\|Number=Sing\|POS=NUM`, `Case=Sbl\|NumType[sem]=Percent\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=All\|Number=Plur\|POS=PRON\|Person=3\|PronType=Int`, `Case=Nom\|Number=Plur\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Del\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Cau\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Gen\|Number=Plur\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Ins\|NumType=Ord\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Ade\|NumType=Frac\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Ine\|NumType=Frac\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Ind`, `Case=Sup\|NumType=Card\|Number=Plur\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Tra\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Ine\|NumType=Card\|Number=Plur\|POS=NUM`, `Case=Gen\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Tra\|Number=Sing\|Number[psed]=Sing\|POS=NOUN`, `Case=Gen\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Gen\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Ind`, `Case=Tem\|Degree=Sup\|Number=Sing\|POS=ADJ`, `Case=Dat\|NumType[sem]=Dot\|Number=Sing\|POS=NUM`, `Case=Sbl\|NumType=Card\|Number=Plur\|POS=NUM`, `Case=All\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Ine\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=All\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Sbl\|Number=Plur\|POS=PROPN`, `Case=Tra\|Number=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Sup\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Dat\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Dat\|Number=Sing\|POS=SYM\|Type=w`, `Case=Ill\|Number=Plur\|POS=PROPN`, `Case=Loc\|Number=Sing\|POS=PROPN`, `Case=Ess\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Acc\|Degree=Pos\|Number=Plur\|Number[psed]=Sing\|POS=ADJ`, `Case=Abl\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=All\|NumType=Frac\|Number=Sing\|POS=NUM`, `Case=Ade\|Degree=Cmp\|Number=Plur\|POS=ADJ`, `Case=Ine\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Ine\|Number=Sing\|POS=SYM\|Type=w`, `Case=Cau\|NumType=Frac\|Number=Sing\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Ela\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Abs\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rel`, `Case=Sbl\|NumType[sem]=Dot\|Number=Sing\|POS=NUM`, `Case=Tem\|Number=Sing\|POS=PROPN`, `Case=Del\|NumType[sem]=Dot\|Number=Sing\|POS=NUM`, `Case=Ade\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Ine\|Number=Sing\|Number[psor]=Plur\|POS=PROPN\|Person[psor]=1`, `Case=Nom\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Tot`, `Case=Acc\|Degree=Sup\|Number=Plur\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Ade\|Number=Plur\|Number[psed]=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=3`, `Case=Ela\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Acc\|Number=Plur\|Number[psed]=Plur\|POS=PRON\|Person=1\|Poss=Yes\|PronType=Prs`, `Case=Del\|Number=Plur\|Number[psed]=Sing\|POS=NOUN`, `Case=Nom\|Degree=Sup\|Number=Sing\|Number[psor]=Sing\|POS=ADJ\|Person[psor]=3`, `Case=Dat\|Number=Plur\|POS=PROPN`, `Case=Ill\|Number=Plur\|POS=PRON\|Person=3\|PronType=Prs`, `Case=Sbl\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Ins\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=1\|Poss=Yes\|PronType=Prs`, `Case=Dat\|Number=Plur\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Ter\|Number=Plur\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Ess\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Sup\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Case=Acc\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=2\|PronType=Tot`, `Case=Gen\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Ine\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Int`, `Case=All\|Number=Sing\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=Dat\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=2`, `Case=Gen\|Number=Sing\|POS=PRON\|Person=3\|PronType=Rcp`, `Definite=Ind\|Mood=Imp\|Number=Sing\|POS=AUX\|Person=3\|Tense=Pres\|Voice=Act`, `Case=Tra\|Number=Sing\|Number[psor]=Plur\|POS=NOUN\|Person[psor]=1`, `Case=Ins\|NumType=Card\|Number=Plur\|Number[psor]=Sing\|POS=NUM\|Person[psor]=3`, `Case=Del\|Number=Sing\|POS=PRON\|Person=2\|Reflexive=Yes`, `Case=Sbl\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=1`, `Case=Dat\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=2\|PronType=Ind`, `Case=All\|Number=Sing\|POS=PRON\|Person=2\|Poss=Yes\|PronType=Prs`, `Case=Sbl\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Ill\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Ine\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=3`, `Case=Del\|Number=Sing\|POS=PRON\|Person=2\|PronType=Prs`, `Case=Acc\|Number=Sing\|Number[psed]=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=2\|PronType=Tot`, `Case=Abl\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Int`, `Case=Ine\|Number=Sing\|Number[psed]=Sing\|POS=PROPN`, `Case=Cau\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Del\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Cau\|Number=Sing\|POS=PRON\|Person=3\|Reflexive=Yes`, `Case=Nom\|NumType=Card\|Number=Sing\|Number[psor]=Plur\|POS=NUM\|Person[psor]=2`, `Case=Abl\|Number=Sing\|Number[psor]=Sing\|POS=NOUN\|Person[psor]=2`, `Case=Ine\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Definite=2\|Mood=Imp\|Number=Sing\|POS=VERB\|Person=1\|Tense=Pres\|VerbForm=Fin\|Voice=Act`, `Case=Dat\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Ela\|Degree=Cmp\|Number=Sing\|POS=ADJ`, `Case=Acc\|Number=Sing\|POS=SYM\|Type=p`, `Case=Abl\|NumType=Ord\|Number=Sing\|POS=ADJ`, `Case=Acc\|Number=Plur\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Dem`, `Case=Ine\|Number=Plur\|POS=PROPN`, `Case=Sbl\|Number=Sing\|Number[psor]=Sing\|POS=PRON\|Person=3\|Person[psor]=3\|PronType=Tot`, `Case=Ins\|Number=Sing\|Number[psor]=Plur\|POS=PRON\|Person=3\|Person[psor]=3\|Poss=Yes\|PronType=Prs`, `Case=Ter\|Degree=Pos\|Number=Sing\|POS=ADJ`, `Case=Dat\|Number=Plur\|POS=PRON\|Person=1\|PronType=Prs`, `Case=Acc\|Number=Plur\|Number[psor]=Sing\|POS=PROPN\|Person[psor]=3`, `Case=All\|Number=Sing\|Number[psed]=Sing\|POS=PRON\|Person=3\|PronType=Tot` |
-| **`parser`** | `ROOT`, `acl`, `advcl`, `advmod`, `advmod:locy`, `advmod:mode`, `advmod:que`, `advmod:tfrom`, `advmod:tlocy`, `advmod:to`, `advmod:tto`, `amod:att`, `appos`, `aux`, `case`, `cc`, `ccomp`, `ccomp:obj`, `ccomp:obl`, `ccomp:pred`, `compound`, `compound:preverb`, `conj`, `cop`, `csubj`, `dep`, `det`, `flat:name`, `iobj`, `list`, `mark`, `nmod`, `nmod:att`, `nmod:obl`, `nsubj`, `nummod`, `obj`, `obj:lvc`, `obl`, `orphan`, `parataxis`, `punct`, `xcomp` |
-| **`ner`** | `LOC`, `MISC`, `ORG`, `PER` |
 
-</details>
 
-<h3 id="accuracy">Accuracy<a class="headerlink" href="#accuracy" title="Permanent link">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>TOKEN_ACC</code></td>
-<td>99.99</td>
-</tr>
-<tr>
-<td><code>TOKEN_P</code></td>
-<td>99.86</td>
-</tr>
-<tr>
-<td><code>TOKEN_R</code></td>
-<td>99.93</td>
-</tr>
-<tr>
-<td><code>TOKEN_F</code></td>
-<td>99.89</td>
-</tr>
-<tr>
-<td><code>SENTS_P</code></td>
-<td>97.11</td>
-</tr>
-<tr>
-<td><code>SENTS_R</code></td>
-<td>97.33</td>
-</tr>
-<tr>
-<td><code>SENTS_F</code></td>
-<td>97.22</td>
-</tr>
-<tr>
-<td><code>TAG_ACC</code></td>
-<td>96.96</td>
-</tr>
-<tr>
-<td><code>POS_ACC</code></td>
-<td>96.89</td>
-</tr>
-<tr>
-<td><code>MORPH_ACC</code></td>
-<td>94.51</td>
-</tr>
-<tr>
-<td><code>MORPH_MICRO_P</code></td>
-<td>97.64</td>
-</tr>
-<tr>
-<td><code>MORPH_MICRO_R</code></td>
-<td>96.84</td>
-</tr>
-<tr>
-<td><code>MORPH_MICRO_F</code></td>
-<td>97.24</td>
-</tr>
-<tr>
-<td><code>LEMMA_ACC</code></td>
-<td>97.45</td>
-</tr>
-<tr>
-<td><code>DEP_UAS</code></td>
-<td>80.90</td>
-</tr>
-<tr>
-<td><code>DEP_LAS</code></td>
-<td>73.69</td>
-</tr>
-<tr>
-<td><code>ENTS_P</code></td>
-<td>84.41</td>
-</tr>
-<tr>
-<td><code>ENTS_R</code></td>
-<td>83.68</td>
-</tr>
-<tr>
-<td><code>ENTS_F</code></td>
-<td>84.05</td>
-</tr>
-</tbody>
-</table>
 
-  <hr>
-<div class="md-source-file">
-  <small>
+
+
+  
     
-      Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2024</span>
+  
+  
+
+
+  <aside class="md-source-file">
+    
       
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 28, 2024</span>
+  </span>
+
     
-  </small>
-</div>
+    
+    
+    
+  </aside>
 
 
   
@@ -1827,47 +2236,12 @@
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Overview
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../install_md/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Installation
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1890,20 +2264,24 @@
   
     
     
+    
+    
       
       
     
     <a href="https://github.com/huspacy/huspacy" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
+    
+    
     
     
       
       
     
     <a href="https://pypi.org/project/huspacy/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3"/></svg>
     </a>
   
 </div>
@@ -1916,6 +2294,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
+    
     
       <div class="md-consent" data-md-component="consent" id="__consent" hidden>
         <div class="md-consent__overlay"></div>
@@ -1953,7 +2332,7 @@
           <input type="checkbox" name="analytics" checked>
           <span class="task-list-indicator"></span>
           Google Analytics
-        <label>
+        </label>
       </li>
     
       
@@ -1966,7 +2345,7 @@
           <input type="checkbox" name="github" checked>
           <span class="task-list-indicator"></span>
           GitHub
-        <label>
+        </label>
       </li>
     
   </ul>
@@ -1989,14 +2368,13 @@
           </form>
         </aside>
       </div>
-      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.instant", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.instant", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-    
     
   </body>
 </html>
