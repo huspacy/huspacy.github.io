@@ -2197,12 +2197,12 @@
 <p>You can install the models directly from 🤗 Hugging Face Hub:</p>
 <ul>
 <li>CPU optimized <a href="https://huggingface.co/huspacy/hu_core_news_lg">large model</a>: <code>pip install hu_core_news_lg@https://huggingface.co/huspacy/hu_core_news_lg/resolve/v3.8.1/hu_core_news_lg-3.8.1-py3-none-any.whl</code></li>
-<li>GPU optimized <a href="https://huggingface.co/huspacy/hu_core_news_trf">transformers model</a>: <code>pip install hu_core_news_trf@https://huggingface.co/huspacy/hu_core_news_trf/resolve/main/hu_core_news_trf-3.7.0-py3-none-any.whl</code></li>
+<li>GPU optimized <a href="https://huggingface.co/huspacy/hu_core_news_trf">transformers model</a>: <code>pip install hu_core_news_trf@https://huggingface.co/huspacy/hu_core_news_trf/resolve/v3.7.1/hu_core_news_trf-3.7.1-py3-none-any.whl</code></li>
 </ul>
 <p>The model wheels carry their version in the filename, as <code>pip&gt;=25.3</code> and <code>uv</code> require. The same URLs are installed with <code>uv</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gp">$ </span>uv<span class="w"> </span>add<span class="w"> </span>https://huggingface.co/huspacy/hu_core_news_lg/resolve/v3.8.1/hu_core_news_lg-3.8.1-py3-none-any.whl
 </code></pre></div>
-<p>The transformers model keeps its versioned wheel on the <code>main</code> branch of its repository, because its release tag predates the filename change.</p>
+<p>The transformers model is published under its version tag from <code>3.7.1</code> on. Earlier versions (<code>3.7.0</code> and below) keep their versioned wheel on the <code>main</code> branch of the repository, because their release tags predate the filename change.</p>
 <p>To speed up inference on GPU, CUDA must be installed as described in <a href="https://spacy.io/usage">https://spacy.io/usage</a>.</p>
 <p>Read more on the models <a href="/models">here</a></p>
 
